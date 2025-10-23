@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Geologica';
+    src: url('../GeologicaFont/static/Geologica-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geologica';
+    src: url('../GeologicaFont/static/Geologica-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: 600;
+}
+
+@font-face {
+    font-family: 'Geologica';
+    src: url('../GeologicaFont/static/Geologica-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Geologica';
+    src: url('../GeologicaFont/static/Geologica-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Geologica';
+    src: url('../GeologicaFont/static/Geologica-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Geologica';
+    src: url('../GeologicaFont/static/Geologica-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geologica';
+    src: url('../GeologicaFont/static/Geologica-Regular.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Geologica';
+    src: url('../GeologicaFont/static/Geologica-SemiBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geologica';
+    src: url('../GeologicaFont/static/Geologica-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+*,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--mainFontPoppins);
+}
+
+dl, ol, ul, li {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, address
+{
+    margin: 0 !important;
+}
+
+p {
+    margin: 0;
+}
+
+:root {
+    --mainColor: #313131;
+    --blackColor: #000;
+    --whiteColor: #fff;
+    --mainFont: "Geologica", sans-serif;
+    --borderRadius120: 120px;
+    --borderRadius7Btn: 7px;
+}
+
+/* Header */
+
+#header {
+    background-color: var(--whiteColor);
+    border-radius: 30px;
+    border: 1px solid var(--mainColor);
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .header_Container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+    }
+
+    .header_Address {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+
+        a {
+            font-size: 14px;
+            color: var(--mainColor);
+        }
+    }
+
+    .header_Language {
+
+        .change_Language {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0 5px;
+        }
+    }
+}
+
+/* Banner */
+
+.carousel-inner {
+    max-height: 500px !important;
+    border-radius: 0 0 var(--borderRadius120) var(--borderRadius120);
+
+    .carousel-item {
+        position: relative;
+    }
+
+    .carousel-item::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
+        z-index: 1;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 50%;
+    right: 0; /* sağ kənar */
+    transform: translate(50%, -50%) rotate(90deg); 
+    transform-origin: center;
+    z-index: 15;
+
+    button {
+        width: 12px !important;
+        height: 12px !important;
+        border-radius: 50%;
+        background-color: var(--whiteColor) !important;
+        opacity: 0.5;
+        margin: 5px 0;
+    }
+    
+    .active {
+        background-color: var(--mainColor);
+    }
+}
+
+.carousel-control-prev {
+    position: absolute;
+    left: 10px !important;
+    bottom: 10px;
+    transform: translate(60px, 200px);
+}
+
+.carousel-control-next {
+    position: absolute;
+    left: 190px !important;
+    bottom: 10px;
+    transform: translate(-60px, 200px);
+
+}
