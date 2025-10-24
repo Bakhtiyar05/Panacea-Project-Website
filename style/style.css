@@ -442,11 +442,11 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     }
 
 .banner_SicialMedia {
-    left: 20px !important;
+    left: 5px !important;
 }
 
 .carousel-indicators {
-    right: -35px !important;
+    right: -50px !important;
 }
 
 .prew_Next_Btn {
@@ -472,7 +472,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         }
 
         p {
-            font-size: 10px !important;
+            font-size: 12px !important;
         }
     }
 
