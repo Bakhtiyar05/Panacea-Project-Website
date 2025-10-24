@@ -422,7 +422,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     /* Banner */
 
     .carousel-inner {
-    border-radius: 0 0 100px 100px;
+    border-radius: 0 0 50px 50px;
     max-height: 500px !important;
 
     .carousel-item {
