@@ -101,7 +101,7 @@ p {
     border: 1px solid var(--mainColor);
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
     margin-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
     z-index: 100;
 
     .header_Container {
@@ -153,85 +153,24 @@ nav {
     gap: 0 20px;
 }
 
+.navbar-brand {
+    position: absolute;
+    z-index: 2;
+    top: 0px !important;
+    border: 1px solid var(--whiteColor);
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-right: 0;
+}
+
 .navbar-brand img {
     width: 100px;
 }
-
-
-
-/* nav {
-    width: 100%;
-    background-color: #fff;
-}
-
-.nav_Container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 10px 0;
-}
-
-.nav_Logo img {
-    width: 140px;
-}
-
-.nav_Menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav_Menu li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav_Menu li a:hover {
-    color: var(--mainColor);
-}
-
-.nav_Buttons {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav_Buttons {
-    background-color: var(--mainColor);
-    padding: 5px 10px;
-    border-radius: 50px;
-    text-decoration: none;
-    outline: none !important;
-    border: 1px solid var(--mainColor);
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-
-    a {
-        font-size: 14px;
-        color: #fff !important;
-    }
-}
-
-.nav_Buttons:hover {
-    background-color: #fff;
-    border: 1px solid var(--mainColor);
-
-    a {
-        color: var(--mainColor) !important;
-    }
-} */
 
 ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     max-height: max-content;
 }
 
-/* 🔹 Burger (toggler) üçün yeni dizayn */
 .navbar-toggler {
   border: none !important;
   background: transparent;
@@ -284,6 +223,27 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
   bottom: 9px;
 }
 
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    margin-bottom: 10px !important;
+}
+
+.free_Consulting_Btn {
+    border: 1px solid var(--mainColor);
+    padding: 7px 20px;
+    border-radius: 40px;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    font-size: 14px;
+    transition: .3s;
+}
+
+.free_Consulting_Btn:hover {
+    background-color: var(--whiteColor);
+    color: var(--mainColor);
+}
+
 
 
 /* Banner */
@@ -302,6 +262,13 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
     .carousel-item {
         position: relative;
+        max-height: 500px !important;
+
+        img {
+            width: 100%;
+            height: 500px !important;
+            object-fit: cover;
+        }
     }
 
     .carousel-item::before {
@@ -453,6 +420,39 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     }
 
     /* Banner */
+
+    .carousel-inner {
+    border-radius: 0 0 100px 100px;
+    max-height: 500px !important;
+
+    .carousel-item {
+        position: relative;
+        max-height: 500px !important;
+
+        img {
+            width: 100%;
+            height: 500px !important;
+            object-fit: cover;
+        }
+    }
+}
+
+.banner_SicialMedia {
+    left: 20px !important;
+}
+
+.carousel-indicators {
+    right: -35px !important;
+}
+
+.prew_Next_Btn {
+    gap: 20px !important;
+}
+
+.prew_Next_Btn .carousel-control-prev, .prew_Next_Btn .carousel-control-next {
+    width: 35px;
+    height: 35px;
+}
 
     .banner_Title_Text {
         left: 160px;
