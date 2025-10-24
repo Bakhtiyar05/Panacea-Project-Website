@@ -227,6 +227,64 @@ nav {
     }
 } */
 
+ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
+    max-height: max-content;
+}
+
+/* 🔹 Burger (toggler) üçün yeni dizayn */
+.navbar-toggler {
+  border: none !important;
+  background: transparent;
+  padding: 5px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.custom-toggler {
+  display: inline-block;
+  cursor: pointer;
+  width: 30px;
+  height: 22px;
+  position: relative;
+}
+
+.custom-toggler span {
+  background-color: var(--mainColor);
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Xəttlərin yerləri */
+.custom-toggler span:nth-child(1) {
+  top: 0;
+}
+.custom-toggler span:nth-child(2) {
+  top: 9px;
+}
+.custom-toggler span:nth-child(3) {
+  bottom: 0;
+}
+
+/* 🔹 Aktiv olarkən (açılan menyu zamanı animasiya) */
+.navbar-toggler[aria-expanded="true"] .custom-toggler span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.navbar-toggler[aria-expanded="true"] .custom-toggler span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .custom-toggler span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+
 
 /* Banner */
 
@@ -374,9 +432,36 @@ nav {
 }
 
 
+@media screen and ( max-width: 850px ) {
+
+    .banner_Title_Text {
+        left: 160px;
+
+        h2 {
+            font-size: 22px;
+            max-width: 300px;
+        }
+    }
+}
+
 @media screen and ( max-width: 768px ) {
+
+    /* Header */
 
     #header {
         display: none;
     }
+
+    /* Banner */
+
+    .banner_Title_Text {
+        left: 160px;
+
+        h2 {
+            font-size: 22px;
+            max-width: 300px;
+        }
+    }
+
+    
 } 
