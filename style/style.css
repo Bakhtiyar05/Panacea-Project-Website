@@ -314,7 +314,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
     
 
-        a {
+        .free_Consulting_Btn {
             background-color: var(--whiteColor);
             border-radius: 30px;
             padding: 10px 20px !important;
@@ -464,12 +464,22 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
     .banner_Title_Text {
         left: 160px;
+        width: 250px;
 
         h2 {
-            font-size: 22px;
+            font-size: 18px !important;
             max-width: 300px;
+        }
+
+        p {
+            font-size: 10px !important;
         }
     }
 
+    .free_Consulting_Btn {
+        padding: 5px 10px !important;
+        font-size: 12px !important;
+    }
+
     
-} 
+}
