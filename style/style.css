@@ -220,7 +220,7 @@ nav {
     border: 1px solid var(--whiteColor);
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    margin-right: 0;
+    margin-right: 0 !important;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -231,10 +231,12 @@ nav {
     width: 100px;
     border-radius: 50%;
     height: 100px;
+    box-shadow: 0 0 0 20px #fff;
 }
 
 ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     max-height: max-content;
+    align-items: center;
 }
 
 .navbar-toggler {
@@ -311,6 +313,10 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 
 /* Banner */
+
+#banner {
+    margin-top: 0px;
+}
 
 .Banner_Carousel {
     position: relative;
@@ -462,6 +468,20 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     filter: invert(1);
 }
 
+@media screen and ( max-width: 991px ) {
+
+    /* Navbar */
+
+    .navbar-nav {
+        gap: 20px 20px;
+    }
+
+    /* Banner */
+
+    #banner {
+        margin-top: 20px;
+    }
+}
 
 @media screen and ( max-width: 850px ) {
 
