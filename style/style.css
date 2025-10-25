@@ -239,6 +239,10 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     /* align-items: center; */
 }
 
+.nav-link {
+    font-weight: 600 !important;
+}
+
 .navbar-toggler {
   border: none !important;
   background: transparent;
