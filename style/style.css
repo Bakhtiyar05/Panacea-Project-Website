@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6, address
 }
 
 p {
-    margin: 0;
+    margin: 0 !important;
 }
 
 :root {
@@ -151,16 +151,16 @@ p {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     margin-right: 0 !important;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 
 }
 
 .navbar-brand img {
-    width: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    height: 100px;
     box-shadow: 0 0 0 6px #fff;
 }
 
@@ -396,12 +396,42 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     filter: invert(1);
 }
 
-
 /* Services */
 
+#services {
+    margin: 50px 0;
+}
+
+.section_Title h2 {
+    width: 280px !important;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.section_Title h2::after {
+    content: "";
+    background-color: var(--mainColor);
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 20px;
+    display: block;
+    clear: both;
+}
+
+.services_Cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 0px;
+    margin-top: 50px;
+}
+
 .service_Card {
-    width: 250px;
-    height: 250px;
+    position: relative;
+    width: 310px;
+    height: 310px;
+    margin: 20px 0;
     text-align: center;
     border: 1px solid var(--mainColor);
     border-radius: 90px 0 90px 0;
@@ -409,6 +439,115 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: .5s;
+}
+
+.service_Card_Title_Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px 0;
+    height: 100%;
+
+    h3 {
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        max-width: 90%;
+    }
+
+    .service_Card_More_Icon {
+        background-color: var(--mainColor) !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s;
+
+        img {
+            width: 25px;
+        }
+    }
+}
+
+    .services_Card_Text_Btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px 0;
+    }
+
+.service_Card:hover {
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    transition: .5s;
+
+    & .service_Card_More_Icon {
+        background-color: var(--whiteColor) !important;
+
+        img {
+            filter: invert(1);
+        }
+    }
+}
+
+.service_Card:hover svg {
+    filter: brightness(0) invert(0);
+    transition: .5s;
+}
+
+.service_Card:hover svg {
+    filter: brightness(0) invert(1);
+    transition: .5s;
+}
+
+.star_Anime_Icon {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 50px;
+}
+
+.service_Card:hover .star_Anime_Icon {
+    animation: starEnter .2s ease-in-out forwards;
+}
+
+.service_Card:not(:hover) .star_Anime_Icon {
+    animation: starExit .2s ease-in-out forwards;
+}
+
+@keyframes starEnter {
+    0% {
+        top: -30px;
+        left: -30px;
+        transform: rotate(0deg) scale(0.8);
+    }
+    100% {
+        top: 30px;
+        left: 220px;
+        transform: rotate(380deg) scale(1);
+    }
+}
+
+@keyframes starExit {
+    0% {
+        top: 30px;
+        left: 220px;
+        transform: rotate(-360deg) scale(1);
+    }
+    100% {
+        top: -30px;
+        left: -30px;
+        transform: rotate(-720deg) scale(0.8);
+    }
 }
 
 @media screen and ( max-width: 991px ) {
