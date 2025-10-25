@@ -231,12 +231,12 @@ nav {
     width: 100px;
     border-radius: 50%;
     height: 100px;
-    box-shadow: 0 0 0 20px #fff;
+    box-shadow: 0 0 0 10px #fff;
 }
 
 ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     max-height: max-content;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .navbar-toggler {
@@ -315,7 +315,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 /* Banner */
 
 #banner {
-    margin-top: 0px;
+    margin-top: -30px;
 }
 
 .Banner_Carousel {
@@ -476,6 +476,11 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         gap: 20px 20px;
     }
 
+    ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
+        text-align: center !important;
+        align-items: center;
+    }
+
     /* Banner */
 
     #banner {
@@ -505,6 +510,12 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
     #header {
         display: none;
+    }
+
+    /* Navbar */
+
+    nav.container {
+        margin-top: 20px !important;
     }
 
     /* Banner */
