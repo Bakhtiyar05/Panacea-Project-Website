@@ -101,7 +101,7 @@ p {
     border: 1px solid var(--mainColor);
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     z-index: 100;
 
     .header_Container {
@@ -134,12 +134,72 @@ p {
 }
 
 /* nav */
-
+/* 
 nav {
     width: 100%;
     background-color: var(--whiteColor);
     z-index: 100;
+
+    .container {
+        padding: 0 !important;
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        top: 40px;
+        transform: translate(-50%, 0);
+    }
 }
+
+.nav_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav_Logo {
+
+    img {
+        width: 120px;
+    }
+}
+
+.nav_Menu {
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+
+    li {
+        a {
+            font-size: 14px;
+            color: var(--mainColor);
+            font-weight: 500;
+            padding: 7px 0;
+            transition: .3s;
+
+            &:hover {
+                color: var(--blackColor);
+            }
+        }
+    }
+}
+
+.nav_Buttons .btn_Consulting {
+    border: 1px solid var(--mainColor);
+    padding: 7px 20px;
+    border-radius: 40px;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    font-size: 14px;
+    transition: .3s;
+}
+
+.nav_Buttons .btn_Consulting:hover {
+    border: 1px solid var(--mainColor);
+    background-color: var(--whiteColor);
+    color: var(--mainColor);
+} */
+
 
 .navbar {
     padding: 0 !important;
@@ -154,17 +214,23 @@ nav {
 }
 
 .navbar-brand {
-    position: absolute;
+    /* position: absolute; */
     z-index: 2;
-    top: 0px !important;
+    /* top: 0px !important; */
     border: 1px solid var(--whiteColor);
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     margin-right: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
 }
 
 .navbar-brand img {
     width: 100px;
+    border-radius: 50%;
+    height: 100px;
 }
 
 ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
@@ -197,7 +263,6 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
   transition: all 0.3s ease;
 }
 
-/* Xəttlərin yerləri */
 .custom-toggler span:nth-child(1) {
   top: 0;
 }
@@ -208,7 +273,6 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
   bottom: 0;
 }
 
-/* 🔹 Aktiv olarkən (açılan menyu zamanı animasiya) */
 .navbar-toggler[aria-expanded="true"] .custom-toggler span:nth-child(1) {
   transform: rotate(45deg);
   top: 9px;
@@ -223,11 +287,11 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
   bottom: 9px;
 }
 
-.navbar-expand-lg .navbar-collapse {
+/* .navbar-expand-lg .navbar-collapse {
     display: flex!important;
     flex-basis: auto;
     margin-bottom: 10px !important;
-}
+} */
 
 .free_Consulting_Btn {
     border: 1px solid var(--mainColor);
