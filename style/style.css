@@ -472,17 +472,8 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
     /* Navbar */
 
-    nav {
-        padding-left: 0 !important;
-    }
-
     .navbar-nav {
         gap: 20px 20px;
-    }
-
-    .navbar-toggler {
-        margin-left: 0 !important;
-        padding-left: 0 !important;
     }
 
     /* nav.container {
@@ -523,6 +514,17 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     }
 }
 
+@media screen and ( min-width: 768px ) {
+    nav {
+        padding-left: 0 !important;
+    }
+
+    .navbar-toggler {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
 @media screen and ( max-width: 768px ) {
 
     /* Header */
@@ -536,6 +538,8 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     nav.container {
         margin-top: 20px !important;
     }
+
+    
 
     /* Banner */
 
