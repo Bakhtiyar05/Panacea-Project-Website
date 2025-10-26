@@ -733,6 +733,114 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 
+/* Why choose us */
+
+#why_Us {
+    position: relative;
+/*  background-image: url('../assests/images/panaceaBlackDots.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    height: 400px;
+
+    .why_Us_Dots_1 {
+        position: absolute;
+        width: 400px;
+        top: 0;
+        left: 0;
+        animation: whyUsStar1 1.5s ease-in-out infinite alternate;
+    }
+
+    .why_Us_Dots_2 {
+        position: absolute;
+        width: 500px;
+        transform: translate(200px), rotate(70deg);
+        top: 0;
+        right: 200px;
+        animation: whyUsStar1 1s ease-in-out infinite alternate;
+    }
+
+    .why_Us_Star_1_Anime {
+        position: absolute;
+        width: 30px;
+        bottom: 0;
+        left: 30px;
+        animation: whyUsStar1 1.3s ease-in-out infinite alternate;
+    }
+
+    .why_Us_Star_2_Anime {
+        position: absolute;
+        width: 20px;
+        top: 0;
+        right: 30px;
+        animation: whyUsStar1 1s ease-in-out infinite alternate;
+    }
+
+    .why_Us_Star_3_Anime {
+        position: absolute;
+        width: 25px;
+        top: 50px;
+        right: 55%;
+        animation: whyUsStar1 1.5s ease-in-out infinite alternate;
+    }
+    
+}
+
+@keyframes whyUsStar1 {
+    from {
+        opacity: .3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.why_Choose_Us_Contents {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    align-items: center;
+
+
+    .teams_Image img {
+        width: 350px;
+        object-fit: cover;
+    }
+
+    .why_Us_Under_Title {
+        max-width: 500px;
+    }
+}
+
+.why_Us_Cotent .why_Us_Titles {
+    margin-bottom: 40px;
+
+    .why_Us_Title {
+        font-size: 58px;
+        font-weight: 700;
+    }
+
+    small {
+        font-size: 15px;
+        font-weight: normal;
+    }
+}
+
+.why_Us_Cotent .why_Us_Titles::after {
+    content: "";
+    background-color: var(--mainColor);
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    margin: 20px auto 0 auto;
+    display: block;
+    clear: both;
+}
+
 
 
 
@@ -803,6 +911,21 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
                 font-size: 15px;
             }
         }
+    }
+
+    /* Why choose us */
+
+    .why_Us_Title {
+        font-size: 30px !important;
+    }
+
+    .why_Us_Under_Title {
+        font-size: 13px !important;
+    }
+
+    .teams_Image img {
+        width: 300px !important;
+        object-fit: cover;
     }
 }
 
@@ -957,5 +1080,19 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         font-size: 12px !important;
     }
 
-    
+    /* Why choose us */
+
+        .why_Choose_Us_Contents {
+            display: flex !important;
+            justify-content: center !important;
+            height: 400px;
+            align-items: center;
+            text-align: center;
+            flex-direction: column-reverse !important;
+        }
+
+        .why_Us_Star_3_Anime {
+            top: 54% !important;
+            right: 20% !important;
+        }
 }
