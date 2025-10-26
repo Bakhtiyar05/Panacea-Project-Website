@@ -1046,6 +1046,10 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         }
     }
 
+.prew_Next_Btn {
+    bottom: 40px !important;
+}
+
 .banner_SicialMedia {
     left: 5px !important;
 }
