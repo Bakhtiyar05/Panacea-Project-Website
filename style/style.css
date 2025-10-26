@@ -638,7 +638,25 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: auto;
+
+    .about_Dots_1 {
+        position: absolute;
+        width: 350px;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: 9;
+    }
+
+    .about_Dots_2 {
+        position: absolute;
+        width: 350px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        z-index: 9 !important;
+    }
 }
 
 .about_Background::before {
@@ -646,7 +664,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     position: absolute;
     inset: 0;
     background: #000000;
-    background: linear-gradient(149deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.59) 100%);        z-index: 1;
+    background: linear-gradient(149deg, rgba(0, 0, 0, 0.822) 0%, rgba(0, 0, 0, 0.743) 100%);        z-index: 1;
 }
 
 .about_Content {
