@@ -637,6 +637,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     height: auto;
 
@@ -647,6 +648,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         left: 0;
         bottom: 0;
         z-index: 9;
+        background-attachment: fixed !important;
     }
 
     .about_Dots_2 {
@@ -728,7 +730,6 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
     .about_Text_More_Btn img {
         width: 30px;
-
     }
 }
 
