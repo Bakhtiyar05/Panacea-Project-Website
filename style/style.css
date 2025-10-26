@@ -767,8 +767,8 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     
     .mobile_Menu_Logo {
         display: block;
-        width: 100px;
-        height: 100px;
+        width: 85px;
+        height: 85px;
         border-radius: 50%;
     }
 
@@ -780,7 +780,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     /* Banner */
 
     #banner {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     /* Info Counter */
@@ -846,7 +846,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     /* Navbar */
 
     nav.container {
-        margin-top: 20px !important;
+        margin-top: 10px !important;
     }
 
     /* Info COunter */
