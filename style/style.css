@@ -154,7 +154,10 @@ p {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+}
 
+.mobile_Menu_Logo {
+    display: none;
 }
 
 .navbar-brand img {
@@ -630,17 +633,19 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
     .navbar-nav {
         gap: 20px 20px;
+    
+        .navbar-brand {
+            display: none;
+        }
     }
 
-    /* nav.container {
-        margin-top: 20px !important;
-        position: absolute;
-        background: #fff !important;
-        top: 0;
-        left: 0;
-        min-width: 100% !important;
-        z-index: 99 !important;
-    } */
+    
+    .mobile_Menu_Logo {
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
 
     ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         text-align: center !important;
@@ -678,18 +683,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 @media screen and ( max-width: 850px ) {
 
-    .banner_Title_Text {
-        left: 80px !important;
-
-        h2 {
-            font-size: 18px !important;
-            max-width: 300px;
-        }
-
-        p {
-            font-size: 12px !important;
-        }
-    }
+    
 }
 
 @media screen and ( min-width: 768px ) {
@@ -764,6 +758,19 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
     /* Banner */
 
+    .banner_Title_Text {
+        left: 70px !important;
+
+        h2 {
+            font-size: 18px !important;
+            max-width: 300px;
+        }
+
+        p {
+            font-size: 12px !important;
+        }
+    }
+
     .carousel-inner {
         border-radius: 0 0 50px 50px;
         max-height: 500px !important;
@@ -789,7 +796,11 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 .prew_Next_Btn {
-    gap: 20px !important;
+    left: 70px;
+}
+
+.prew_Next_Btn {
+    gap: 10px !important;
 }
 
 .prew_Next_Btn {
@@ -803,7 +814,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
     .banner_Title_Text {
         left: 160px;
-        width: 250px;
+        width: 290px;
 
         h2 {
             font-size: 18px !important;
@@ -811,6 +822,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         }
 
         p {
+            font-weight: 400;
             font-size: 12px !important;
         }
     }
