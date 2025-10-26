@@ -1,32 +1,52 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const counters = document.querySelectorAll('.counter');
-  const speed = 2000; // daha kiçik rəqəm = daha sürətli animasiya
+/* Counter info */
 
-  const startCounting = (counter) => {
-    const target = +counter.getAttribute('data-target');
-    const count = +counter.innerText;
+document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counter');
+    if (!counters.length) return;
 
-    const increment = target / 100; // artım addımı
+    const options = {
+        root: null,
+        rootMargin: '0px 0px -10% 0px',
+        threshold: 0.1
+    };
 
-    if (count < target) {
-      counter.innerText = Math.ceil(count + increment);
-      setTimeout(() => startCounting(counter), speed);
-    } else {
-      counter.innerText = target;
-    }
-  };
+    const animateCount = (el, duration = 5400) => {
+        const rawTarget = el.getAttribute('data-target') || el.textContent;
+        const target = Math.max(0, parseInt(String(rawTarget).replace(/\D/g, ''), 10) || 0);
+        const startTime = performance.now();
+        const start = 0;
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const counter = entry.target;
-        startCounting(counter);
-        observer.unobserve(counter); // bir dəfə işlə
-      }
+        const step = (now) => {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(start + (target - start) * eased);
+        el.textContent = current;
+        if (progress < 1) {
+            requestAnimationFrame(step);
+        } else {
+            el.textContent = target;
+        }
+        };
+
+        requestAnimationFrame(step);
+    };
+
+    const obs = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const el = entry.target;
+            if (!el.classList.contains('counted')) {
+            animateCount(el);
+            el.classList.add('counted');
+            }
+            observer.unobserve(el);
+        }
+        });
+    }, options);
+
+    counters.forEach(c => {
+        c.textContent = '0';
+        obs.observe(c);
     });
-  }, { threshold: .9 }); // 60% göründükdə başlasın
-
-  counters.forEach(counter => {
-    observer.observe(counter);
-  });
 });

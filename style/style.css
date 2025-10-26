@@ -178,6 +178,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 15px !important;
 
     svg {
         width: 24px;
@@ -397,7 +398,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 .prew_Next_Btn {
     position: absolute;
     bottom: 30px;
-    left: 60px;
+    left: 230px;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -407,8 +408,8 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 .prew_Next_Btn .carousel-control-prev,
 .prew_Next_Btn .carousel-control-next {
     position: static;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     display: flex;
@@ -423,16 +424,18 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     filter: invert(1);
 }
 
+/* Info Counter */
+
 .info_Counter_Cards {
     /* position: absolute; */
     bottom: -80px;
     right: 60px !important;
     z-index: 9;
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0 10px;
+    gap: 30px 10px;
 
     .info_Counter_Card {
         background-image: url('../assests/images/panacealogoWhiteDots.png.png');
@@ -442,11 +445,11 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         background-color: var(--mainColor);
         padding: 15px 15px;
         min-height: 100%;
-        width: 28%;
+        width: 270px;
         border-radius: 50px 0 50px 0 !important;
         border-radius: var(--borderRadius7Btn);
         text-align: center;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 25px rgb(0, 0, 0);
 
         svg {
             margin-bottom: 10px;
@@ -621,7 +624,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     }
 }
 
-@media screen and ( max-width: 991px ) {
+@media screen and ( max-width: 992px ) {
 
     /* Navbar */
 
@@ -649,6 +652,28 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     #banner {
         margin-top: 20px;
     }
+
+    /* Info Counter */
+
+    .info_Counter_Cards {
+
+        .info_Counter_Card {
+            width: 270px;
+
+            svg {
+                font-size: 1px !important;
+                margin-bottom: 10px;
+            }
+
+            small {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 @media screen and ( max-width: 850px ) {
@@ -668,6 +693,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 }
 
 @media screen and ( min-width: 768px ) {
+    
     nav {
         padding-left: 0 !important;
     }
@@ -675,6 +701,18 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     .navbar-toggler {
         margin-left: 0 !important;
         padding-left: 0 !important;
+    }
+
+    /* Info Counter */
+
+    .info_Counter_Cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 10px;
+
+        .info_Counter_Card {
+            width: 27%;
+        }
     }
 }
 
@@ -692,7 +730,37 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         margin-top: 20px !important;
     }
 
+    /* Info COunter */
     
+    .info_Counter_Cards {
+        justify-content: center;
+        gap: 30px 10px;
+
+        .info_Counter_Card {
+            width: 470px;
+
+            svg {
+                margin-bottom: 10px;
+            }
+
+            small {
+                font-size: 34px;
+                font-weight: 700;
+                color: var(--whiteColor);
+            }
+
+            p {
+                font-size: 25px;
+                font-weight: 500;
+                letter-spacing: .5px;
+                color: var(--whiteColor);
+            }
+        }
+    }
+
+    .services_Cards {
+        justify-content: center;
+    }
 
     /* Banner */
 
