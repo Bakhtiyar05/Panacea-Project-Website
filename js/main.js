@@ -56,31 +56,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
 jQuery(document).ready(function ($) {
 
- $(".regular").slick({
+    $(".regular").slick({
         dots: true,
-
         autoplay: true,
-        autoplaySpeed:9000,
-        speed:700,
+        autoplaySpeed: 9000,
+        speed: 700,
         mobileFirst: true,
-        slidesToShow:1,
-        slidesToScroll:1,
-        pauseOnHover:false,
-        respondTo:'min',
-        cssEase:'linear',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        respondTo: 'min',
+        cssEase: 'linear',
         prevArrow: '<span class="icon-angle-left"></span>',
         nextArrow: '<span class="icon-angle-right"></span>'
-      });
-
-$('.slider-for').slick({
+    });
+    
+    // əsas slider
+    $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         draggable: false,
         fade: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        pauseOnHover: true,
         asNavFor: '.slider-nav'
     });
-$('.slider-nav').slick({
+
+    // alt slider
+    $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
@@ -93,27 +98,23 @@ $('.slider-nav').slick({
         nextArrow: '<span class="icon-angle-right"></span>',
         responsive: [
             {
-              breakpoint: 450,
-              settings: {
-                dots: false,
-                slidesToShow: 3,  
-                centerPadding: '0px',
+                breakpoint: 450,
+                settings: {
+                    dots: false,
+                    slidesToShow: 3,  
+                    centerPadding: '0px',
                 }
             },
             {
-              breakpoint: 420,
-              settings: {
-                autoplay: true,
-                dots: false,
-                slidesToShow: 1,
-                centerMode: false,
+                breakpoint: 420,
+                settings: {
+                    autoplay: true,
+                    dots: false,
+                    slidesToShow: 1,
+                    centerMode: false,
+                    pauseOnHover: true,
                 }
             }
         ]
     });
-
-
-
-
-
- });	
+});
