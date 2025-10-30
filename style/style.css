@@ -1452,11 +1452,20 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         /* Testimonials */
 
         #testimonials {
-            margin-top: 100px;
+            margin-top: 150px;
         }
 
         .reviews .sin-testiImage img {
             width: 100px;
+        }
+
+        .reviews .grid-padding-x > .cell:nth-child(2) .quotes::before {
+            left: 5px !important;
+        }
+
+        .reviews .grid-padding-x > .cell:nth-child(2) .quotes::after {
+            top: 170px !important;
+            right: 10px !important;
         }
 
         /* Contact */
@@ -1486,7 +1495,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
             margin: auto;
         
             img {
-                width: 300px;
+                width: 340px !important;
             }
 
             .contacts_Titles {

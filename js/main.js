@@ -110,8 +110,8 @@ jQuery(document).ready(function ($) {
                 settings: {
                     autoplay: true,
                     dots: false,
-                    slidesToShow: 1,
-                    centerMode: false,
+                    slidesToShow: 3,
+                    centerMode: true,
                     pauseOnHover: true,
                 }
             }
