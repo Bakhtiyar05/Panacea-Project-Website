@@ -57,6 +57,7 @@
     font-style: normal;
 }
 
+
 *,
 body {
     padding: 0;
@@ -154,17 +155,31 @@ p {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    position: relative;
 }
 
 .mobile_Menu_Logo {
     display: none;
 }
 
-.navbar-brand img {
+.navbar-brand .panaceaLogo {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     box-shadow: 0 0 0 6px #fff;
+}
+
+.panaceaLogoLeftCircle {
+    position: absolute;
+    left: -45px;
+    bottom: 7px;
+}
+
+.panaceaLogoRightCircle {
+    position: absolute;
+    right: -50px;
+    bottom: 8px;
+    transform: rotateY(-180deg);
 }
 
 ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
@@ -441,7 +456,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     gap: 30px 10px;
 
     .info_Counter_Card {
-        background-image: url('../assests/images/panacealogoWhiteDots.png.png');
+        background-image: url('../assests/images/panaceaWhiteDots.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
