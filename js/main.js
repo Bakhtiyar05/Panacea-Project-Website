@@ -122,4 +122,17 @@ jQuery(document).ready(function ($) {
 
 
 
+document.querySelector('.mouse-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#services').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+document.querySelector('.mouse-btn').addEventListener('click',function(e) {
+    e.preventDefault();
+    document.querySelector('#services').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
 
