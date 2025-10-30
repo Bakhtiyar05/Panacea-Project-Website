@@ -1131,7 +1131,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
         /* height: max-content !important; */
         
         img {
-            width: 40vw;
+            width: 400px;
         }
     }
 
@@ -1434,9 +1434,67 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
             flex-direction: column-reverse !important;
         }
 
+        .why_Us_Star_1_Anime {
+            bottom: -100px !important;
+        }
+
         .why_Us_Star_3_Anime {
-            top: 54% !important;
-            right: 20% !important;
+            top: 300px !important;
+            right: 40px !important;
+        }
+
+        .teams_Image img {
+            width: 260px !important;
+            object-fit: cover;
+        }
+
+
+        /* Testimonials */
+
+        #testimonials {
+            margin-top: 100px;
+        }
+
+        .reviews .sin-testiImage img {
+            width: 100px;
+        }
+
+        /* Contact */
+
+        #contact {
+            margin: 150px auto 50px auto;
+        }
+
+        .contacts_Cotent {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column !important;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+        }
+
+        .contacts_Cotent .contacts_Titles::after {
+            margin: 20px auto !important;
+        }
+
+        .contact_Infos {
+            align-items: center !important;
+        }
+
+        .contact_Image {
+            margin: auto;
+        
+            img {
+                width: 300px;
+            }
+
+            .contacts_Titles {
+                text-align: center !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
         }
 }
 
