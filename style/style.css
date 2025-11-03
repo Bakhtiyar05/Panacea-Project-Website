@@ -780,7 +780,8 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     position: absolute;
     inset: 0;
     background: #000000;
-    background: linear-gradient(149deg, rgba(0, 0, 0, 0.822) 0%, rgba(0, 0, 0, 0.743) 100%);        z-index: 1;
+    background: linear-gradient(149deg, rgba(0, 0, 0, 0.822) 0%, rgba(0, 0, 0, 0.743) 100%);
+    z-index: 1;
 }
 
 .about_Content {
@@ -970,8 +971,8 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 /* Testimonials */
 
 #testimonials {
-    background: 313131;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.819) 0%, rgba(217, 217, 217, 0.497) 60%);
+    background: #313131;
+    background: linear-gradient(0deg, rgba(49, 49, 49, 0.638) 0%, rgba(49, 49, 49, 0) 100%);
     padding: 100px 0;
 }
 
