@@ -403,7 +403,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     top: 50%;
     left: 230px;
     transform: translate(0, -50%);
-    z-index: 9;
+    z-index: 99;
 
     small {
         color: var(--whiteColor);
