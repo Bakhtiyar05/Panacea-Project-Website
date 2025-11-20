@@ -146,7 +146,7 @@ p {
     gap: 0 20px;
 }
 
-.navbar-brand {
+/* .navbar-brand {
     z-index: 2;
     border: 1px solid var(--whiteColor);
     padding-top: 0 !important;
@@ -156,6 +156,18 @@ p {
     height: 120px;
     border-radius: 50%;
     position: relative;
+} */
+
+.navbar-brand {
+    z-index: 2;
+    /* border: 1px solid var(--whiteColor); */
+    /* padding-top: 0 !important; */
+    /* padding-bottom: 0 !important; */
+    margin-right: 0 !important;
+    /* width: 120px; */
+    /* height: 120px; */
+    /* border-radius: 50%; */
+    /* position: relative; */
 }
 
 .mobile_Menu_Logo {
@@ -163,14 +175,13 @@ p {
 }
 
 .navbar-brand .panaceaLogo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 6px #fff;
+    width: 110px;
+    /* border-radius: 50%; */
+    /* box-shadow: 0 0 0 6px #fff; */
 }
 
 .panaceaLogoLeftCircle {
-    position: absolute;
+    /* position: absolute; */
     left: -45px;
     bottom: 7px;
 }
@@ -189,6 +200,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 .nav-link {
     font-weight: 400 !important;
     padding: 0 !important;
+    font-size: 14px !important;
     color: var(--mainColor) !important;
 }
 
@@ -213,6 +225,59 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     color: #000 !important;
     font-weight: 400 !important;
 }
+
+.nav-item.dropdown {
+    position: relative;
+}
+
+.dropdown-menu-custom {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 0 10px #939393;
+    padding: 10px 0;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: 0.30s ease;
+    width: max-content;
+    z-index: 20;
+}
+
+.nav-item.dropdown:hover .dropdown-menu-custom {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu-custom li {
+    list-style: none;
+}
+
+.dropdown-menu-custom li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--mainColor);
+    font-size: 14px;
+    transition: 0.20s;
+    border-radius: 8px;
+}
+
+.dropdown-menu-custom li a:hover {
+    background: rgb(33, 33, 33);
+    color: #fff !important;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -293,7 +358,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 #banner {
     position: relative;
-    margin-top: -30px;
+    /* margin-top: -30px; */
 }
 
 .Banner_Carousel {
@@ -1254,9 +1319,8 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     
     .mobile_Menu_Logo {
         display: block;
-        width: 85px;
-        height: 85px;
-        border-radius: 50%;
+        width: auto;
+        height: 55px;
     }
 
     ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
