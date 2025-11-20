@@ -243,7 +243,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
     transform: translateY(15px);
     transition: 0.30s ease;
     width: max-content;
-    z-index: 20;
+    z-index: 999;
 }
 
 .nav-item.dropdown:hover .dropdown-menu-custom {
