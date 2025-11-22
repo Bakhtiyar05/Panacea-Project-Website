@@ -620,6 +620,7 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 	position: absolute;
 	bottom: -2px;
 	left: 0;
+    height: auto;
 	width: 100%;
     z-index: 9;
 }
@@ -1304,6 +1305,26 @@ ul.navbar-nav.mx-auto.my-2.my-lg-0.navbar-nav-scroll {
 
 
 /* Mobile */
+
+@media screen and ( min-width: 1300px ) {
+
+    .carousel-inner {
+        min-height: 100vh !important;
+    }
+
+    .carousel-item {
+        min-height: 100vh !important;
+    }
+
+    .carousel-inner {
+        img {
+            min-height: 100vh !important;
+        }
+    }
+
+}
+
+
 
 @media screen and ( max-width: 992px ) {
 
