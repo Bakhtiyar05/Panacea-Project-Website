@@ -140,5 +140,53 @@ document.querySelector('.mouse-btn').addEventListener('click',function(e) {
 
 
 
+/* Email js Start*/
 
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const params = {
+        user_name: document.getElementById("name").value,
+        user_email: document.getElementById("email").value,
+        user_phone: document.getElementById("phone").value,
+        user_message: document.getElementById("message").value
+    };
+
+    emailjs.send("service_spnz76a", "template_bnr7xyj", params)
+    .then(function(response) {
+        alert("Mesaj uğurla göndərildi!");
+        document.getElementById("contactForm").reset();
+
+    }, function(error) {
+        alert("Xəta baş verdi, sonra yenidən cəhd edin.");
+        console.log(error);
+    });
+    
+    submitBtn.disabled = true;
+});
+
+
+let inputs = document.querySelectorAll("#contactForm input, #contactForm textarea");
+let submitBtn = document.querySelector(".contact_SendBtn");
+
+submitBtn.disabled = true;
+
+function checkInputs() {
+    let allFilled = true;
+
+    inputs.forEach(input => {
+        if (input.value.trim() === "") {
+            allFilled = false;
+        }
+    });
+
+    submitBtn.disabled = !allFilled;
+}
+
+inputs.forEach(input => {
+    input.addEventListener("input", checkInputs);
+});
+
+
+/* Email js End */
 
