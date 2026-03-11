@@ -2,22 +2,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var arrLang = {
         'az': {
-            'home': 'Əsas səhifə',
-            'about': 'Haqqımızda',
-            'services': 'Xidmətlər',
-            'contact': 'Əlaqə',
+            'nav_Home': 'Əsas səhifə',
+            'nav_About': 'Haqqımızda',
+            'nav_Services': 'Xidmətlər',
+            'nav_Contact': 'Əlaqə',
         },
         'en': {
-            'home': 'Home',
-            'about': 'About Us',
-            'services': 'Services',
-            'contact': 'Contact',
+            'nav_Home': 'Home',
+            'nav_About': 'About Us',
+            'nav_Services': 'Services',
+            'nav_Contact': 'Contact',
         },
         'ru': {
-            'home': 'Главная',
-            'about': 'О нас',
-            'services': 'Услуги',
-            'contact': 'Контакт',
+            'nav_Home': 'Главная',
+            'nav_About': 'О нас',
+            'nav_Services': 'Услуги',
+            'nav_Contact': 'Контакт',
         }
     };
 
