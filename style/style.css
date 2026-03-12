@@ -934,8 +934,7 @@ a.cta-button {
     padding: 5px 10px;
     border-radius: 30px;
     width: max-content;
-    background-color: var(--mainColor);
-    color: #fff;
+    color: var(--mainColor);
     border: 1px solid gray;
     box-shadow: 0 0 10px gray;
     transition: .2s;
@@ -1278,6 +1277,10 @@ a.cta-button {
     justify-content: space-between;
     color: #757575 !important;
     font-weight: 500 !important;
+
+    span {
+        color: #757575 !important;
+    }
     
     a {
       color: #757575;
@@ -1287,7 +1290,7 @@ a.cta-button {
 
   nav.navbar.container {
     min-height: 60px;
-    padding: 20px 10px !important;
+    padding: 0 !important;
   }
 }
 
@@ -1310,6 +1313,7 @@ a.cta-button {
     width: -webkit-fill-available;
     text-align: right;
   }
+
 }
 
 .submenu {
@@ -1972,11 +1976,35 @@ a.cta-button {
 }
 
 @media screen and ( max-width: 768px ) {
-  
-  .modal-content {
-      width: 95% !important;
-      margin: auto;
-  }
+
+    /* Header */
+
+    #header_Top {
+
+        .header_Address {
+
+            a {
+                font-size: 11px !important;
+            }
+        }
+
+        .header_Language {
+
+            span {
+                color: rgb(201, 201, 201);
+            }
+        }
+        
+        .dropdown-item {
+            font-size: .85rem;
+            margin-top: 3px;
+        }
+    }
+    
+    .modal-content {
+        width: 95% !important;
+        margin: auto;
+    }
 }
 
 /* Modal Shopping Cart PopUp End */
@@ -3723,11 +3751,6 @@ a.cta-button {
         min-height: 100vh;
     }
 
-    /* Banner */
-
-    #banner {
-        margin-top: 10px;
-    }
 
     /* Info Counter */
 
@@ -3809,14 +3832,14 @@ a.cta-button {
 
     /* Header */
 
-    #header {
+    /* #header {
         display: none;
-    }
+    } */
 
     /* Navbar */
 
     nav.container {
-        margin-top: 10px !important;
+        margin-top: 5px !important;
     }
 
     /* Info Counter */

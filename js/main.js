@@ -1,3 +1,114 @@
+
+/* Navbar */
+
+const menu = document.querySelector(".menu");
+const menuInner = menu.querySelector(".menu__inner");
+const menuArrow = menu.querySelector(".menu__arrow");
+const menuTitle = menu.querySelector(".menu__title");
+const burger = document.querySelector(".burger");
+const overlay = document.querySelector(".overlay");
+
+function toggleMenu() {
+    menu.classList.toggle("is-active");
+    overlay.classList.toggle("is-active");
+}
+
+function showSubMenu(children) {
+    subMenu = children.querySelector(".submenu");
+    subMenu.classList.add("is-active");
+    subMenu.style.animation = "slideLeft 0.35s ease forwards";
+    const menuTitle = children.querySelector("i").parentNode.childNodes[0]
+        .textContent;
+    menu.querySelector(".menu__title").textContent = menuTitle;
+    menu.querySelector(".menu__header").classList.add("is-active");
+}
+
+function hideSubMenu() {
+    subMenu.style.animation = "slideRight 0.35s ease forwards";
+    setTimeout(() => {
+        subMenu.classList.remove("is-active");
+    }, 300);
+
+    menu.querySelector(".menu__title").textContent = "";
+    menu.querySelector(".menu__header").classList.remove("is-active");
+}
+
+function toggleSubMenu(e) {
+    if (!menu.classList.contains("is-active")) {
+        return;
+    }
+    if (e.target.closest(".menu__dropdown")) {
+        const children = e.target.closest(".menu__dropdown");
+        showSubMenu(children);
+    }
+}
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+        if (menu.classList.contains("is-active")) {
+        toggleMenu();
+        }
+    }
+});
+
+
+
+
+/* Navbar hide on scroll Start */
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", function () {
+    const filter_Scrolly = document.getElementById("filteredScroll");
+
+    if (window.scrollY > lastScrollY) {
+        header.style.top = "-80px";
+        filter_Scrolly.style.top = "10px";
+        filter_Scrolly.style.transition = '.3s'
+    } else {
+        header.style.top = "0px";
+        filter_Scrolly.style.top = "70px";
+        filter_Scrolly.style.transition = '.3s'
+        filter_Scrolly.style.position = 'sticky';
+    }
+
+
+    lastScrollY = window.scrollY;
+});
+
+/* Navbar hide on scroll End */
+
+
+
+/* Products Filter Button Start */
+
+window.addEventListener("scroll", function () {
+    const header = document.getElementById("header");
+    
+    if (window.scrollY > 150) {
+        header.classList.add("scrolled");
+        header.style.transition = "1s";
+    } else {
+        header.classList.remove("scrolled");
+        header.style.transition = "1s";
+    }
+
+    lastScrollY = window.scrollY;
+});
+
+/* Products Filter Button End */
+
+
+burger.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+menuArrow.addEventListener("click", hideSubMenu);
+menuTitle.addEventListener("click", hideSubMenu);
+menuInner.addEventListener("click", toggleSubMenu);
+
+/* Navbar End */
+
+
+
 /* Counter info */
 
 document.addEventListener('DOMContentLoaded', () => {
