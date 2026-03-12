@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Geologica';
     src: url('../GeologicaFont/static/Geologica-Black.ttf') format('truetype');
     font-weight: normal;
@@ -55,14 +55,16 @@
     src: url('../GeologicaFont/static/Geologica-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
-}
+} */
 
 *,
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--mainFontPoppins);
+    /* font-family: var(--mainFontPoppins); */
+    font-family: system-ui, -apple-system, sans-serif;
+
 }
 
 dl, ol, ul, li {
@@ -166,15 +168,15 @@ p {
 }
 
 :root {
-  --color: #1872B8;
-  --color1: #1973B9;
-  --color2: #b8ddff;
-  --color3: #0f172a;
-  --colorGreen: #107a1d;
-  --color2-dark: #0f131a;
-  --colorBackgroundGradient: linear-gradient(90deg, #3b82f6, #06b6d4);
-  --borderRadius_8px: 8px;
-  --containerWidth: 1640px;
+    --color: #1872B8;
+    --color1: #1973B9;
+    --color2: #b8ddff;
+    --color3: #0f172a;
+    --colorGreen: #107a1d;
+    --color2-dark: #0f131a;
+    --colorBackgroundGradient: linear-gradient(90deg, #3b82f6, #06b6d4);
+    --borderRadius_8px: 8px;
+    --containerWidth: 1640px;
 }
 
 .BuyNow_Btn {
@@ -187,11 +189,11 @@ p {
 }
 
 .add_To_Cart_Btn {
-  padding: 10px 25px;
-  color: var(--color);
-  border-radius: 30px;
-  width: 170px !important;
-  border: 1px solid var(--color);
+    padding: 10px 25px;
+    color: var(--color);
+    border-radius: 30px;
+    width: 170px !important;
+    border: 1px solid var(--color);
 }
 
 .learnMore_Btn {
@@ -203,19 +205,61 @@ p {
 }
 
 .watch_Video_Play_Btn {
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: max-content;
-  margin: auto;
-  padding: 10px 20px;
-  border-radius: 30px;
-  color: var(--color);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: var(--color);
 
-  svg {
-    margin-left: 10px;
-  }
+    svg {
+        margin-left: 10px;
+    }
+}
+
+.page_Title {
+    margin-bottom: 50px;
+}
+
+.page_Title h2 {
+    width: 280px !important;
+    font-size: clamp(4rem, 3vw, 1.4rem) !important;
+    font-weight: 700;
+}
+
+.page_Title h2::after {
+    content: "";
+    background-color: var(--mainColor);
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 20px;
+    display: block;
+    clear: both;
+}
+
+.section_Title {
+    margin-bottom: 50px;
+}
+
+.section_Title h2 {
+    width: 280px !important;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.section_Title h2::after {
+    content: "";
+    background-color: var(--mainColor);
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 20px;
+    display: block;
+    clear: both;
 }
 
 *,

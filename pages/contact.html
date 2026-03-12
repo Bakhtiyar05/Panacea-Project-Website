@@ -1,219 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Our Team</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Our Team</title>
     <link rel="stylesheet" href="/style/style.css">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      background: #f8f9fc;
-      color: #333;
-      line-height: 1.5;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 12px;
-      text-align: center;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: #555;
-      margin-bottom: 40px;
-      font-size: 1.1rem;
-      max-width: 640px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px 40px;
-    }
-
-    .form-side, .contact-options {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 12px 14px;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      font-size: 1rem;
-      background: white;
-      transition: border-color 0.2s;
-    }
-
-    input:focus, textarea:focus, select:focus {
-      outline: none;
-      border-color: #6366f1;
-      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
-    }
-
-    textarea {
-      min-height: 110px;
-      resize: vertical;
-    }
-
-
-    .btn {
-      background: #1e293b;
-      color: white;
-      border: none;
-      padding: 14px 28px;
-      font-size: 1.05rem;
-      font-weight: 500;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.2s;
-      margin-top: 12px;
-    }
-
-    .btn:hover {
-      background: #0f172a;
-    }
-
-    .options-title {
-      font-size: 1.4rem;
-      margin-bottom: 16px;
-    }
-
-    .option {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 1.05rem;
-    }
-
-    .option a {
-      color: #4f46e5;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .option a:hover {
-      text-decoration: underline;
-    }
-
-    .address {
-      margin-top: 8px;
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .container {
-        padding: 30px 16px;
-      }
-
-      h1 {
-        font-size: 1.8rem;
-      }
-
-      .btn {
-        width: 100%;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="/style/contact.css">
 </head>
 <body>
 
-    <div class="container">
-    <h1>Contact our team</h1>
-    <p class="subtitle">
-        Got any questions about the product or scaling on our platform? We're here to help.<br>
-        Chat to our friendly team 24/7 and get onboard in less than 5 minutes.
-    </p>
+    <!-- Header -->
 
-    <div class="grid">
-        <!-- Left – Form -->
-        <div class="form-side">
-        <div>
-            <label>First name</label>
-            <input type="text" placeholder="First name">
+    <section id="header_Top" class="container">
+        <div class="container header_Container">
+            <section class="header_Address">
+                <address class="location">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 10C20 16.5 12 22 12 22C12 22 4 16.5 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z" stroke="#313131" stroke-width="2"/>
+                        <path d="M15 10C15 10.7956 14.6839 11.5587 14.1213 12.1213C13.5587 12.6839 12.7956 13 12 13C11.2044 13 10.4413 12.6839 9.87868 12.1213C9.31607 11.5587 9 10.7956 9 10C9 9.20435 9.31607 8.44129 9.87868 7.87868C10.4413 7.31607 11.2044 7 12 7C12.7956 7 13.5587 7.31607 14.1213 7.87868C14.6839 8.44129 15 9.20435 15 10Z" stroke="#313131" stroke-width="2"/>
+                    </svg>
+                    <a href="">Bunyad Sərdarov 123</a>
+                </address>
+                <address class="email">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.425 5.526L12.9555 13.368C12.6864 13.5909 12.3479 13.7129 11.9985 13.7129C11.6491 13.7129 11.3106 13.5909 11.0415 13.368L1.5765 5.526C1.52571 5.67887 1.49988 5.83892 1.5 6V18C1.5 18.3978 1.65804 18.7794 1.93934 19.0607C2.22064 19.342 2.60218 19.5 3 19.5H21C21.3978 19.5 21.7794 19.342 22.0607 19.0607C22.342 18.7794 22.5 18.3978 22.5 18V6C22.5006 5.839 22.4753 5.67895 22.425 5.526ZM3 3H21C21.7956 3 22.5587 3.31607 23.1213 3.87868C23.6839 4.44129 24 5.20435 24 6V18C24 18.7956 23.6839 19.5587 23.1213 20.1213C22.5587 20.6839 21.7956 21 21 21H3C2.20435 21 1.44129 20.6839 0.87868 20.1213C0.316071 19.5587 0 18.7956 0 18V6C0 5.20435 0.316071 4.44129 0.87868 3.87868C1.44129 3.31607 2.20435 3 3 3ZM2.685 4.5L11.049 11.4045C11.3169 11.6258 11.6533 11.7472 12.0007 11.748C12.3481 11.7488 12.6851 11.629 12.954 11.409L21.402 4.5H2.685Z" fill="#313131"/>
+                    </svg>
+                    <a href="">info@panacea.com</a>
+                </address>
+                <address class="phone_Number">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.6289 13.891L17.0849 13.438L16.0259 12.374L15.5719 12.827L16.6289 13.891ZM18.6139 13.248L20.5249 14.287L21.2399 12.969L19.3299 11.931L18.6139 13.248ZM20.8919 16.351L19.4719 17.764L20.5289 18.827L21.9489 17.415L20.8919 16.351ZM18.6059 18.218C17.1559 18.354 13.4059 18.233 9.34393 14.195L8.28593 15.258C12.7179 19.665 16.9369 19.881 18.7459 19.712L18.6059 18.218ZM9.34393 14.195C5.47293 10.345 4.83093 7.10799 4.75093 5.70299L3.25293 5.78799C3.35293 7.55599 4.14793 11.144 8.28593 15.258L9.34393 14.195ZM10.7189 8.01499L11.0059 7.72899L9.94993 6.66599L9.66293 6.95099L10.7189 8.01499ZM11.2339 4.09399L9.97393 2.40999L8.77293 3.30999L10.0329 4.99299L11.2339 4.09399ZM5.73293 2.04299L4.16293 3.60299L5.22093 4.66699L6.78993 3.10699L5.73293 2.04299ZM10.1909 7.48299C9.66093 6.95099 9.66093 6.95099 9.66093 6.95299H9.65893L9.65593 6.95699C9.60841 7.0049 9.56586 7.05751 9.52893 7.11399C9.47493 7.19399 9.41593 7.29899 9.36593 7.43199C9.2442 7.77532 9.21388 8.1444 9.27793 8.50299C9.41193 9.36799 10.0079 10.511 11.5339 12.029L12.5919 10.965C11.1629 9.54499 10.8229 8.68099 10.7599 8.27299C10.7299 8.07899 10.7609 7.98299 10.7699 7.96099C10.7759 7.94766 10.7759 7.94566 10.7699 7.95499C10.761 7.96879 10.751 7.98183 10.7399 7.99399L10.7299 8.00399L10.7199 8.01299L10.1909 7.48299ZM11.5339 12.029C13.0609 13.547 14.2099 14.139 15.0759 14.271C15.5189 14.339 15.8759 14.285 16.1469 14.184C16.2987 14.1285 16.4406 14.0488 16.5669 13.948L16.6169 13.903L16.6239 13.897L16.6269 13.894L16.6279 13.892C16.6279 13.892 16.6289 13.891 16.0999 13.359C15.5699 12.827 15.5729 12.826 15.5729 12.826L15.5749 12.824L15.5769 12.822L15.5829 12.817L15.5929 12.807L15.6309 12.777C15.6403 12.771 15.6379 12.7717 15.6239 12.779C15.5989 12.788 15.5009 12.819 15.3039 12.789C14.8899 12.725 14.0199 12.385 12.5919 10.965L11.5339 12.029ZM9.97393 2.40899C8.95393 1.04899 6.94993 0.83299 5.73293 2.04299L6.78993 3.10699C7.32193 2.57799 8.26593 2.63299 8.77293 3.30999L9.97393 2.40899ZM4.75193 5.70399C4.73193 5.35799 4.89093 4.99599 5.22093 4.66799L4.16193 3.60399C3.62493 4.13799 3.20193 4.89399 3.25293 5.78799L4.75193 5.70399ZM19.4719 17.764C19.1979 18.038 18.9019 18.192 18.6069 18.219L18.7459 19.712C19.4809 19.643 20.0819 19.273 20.5299 18.828L19.4719 17.764ZM11.0059 7.72899C11.9909 6.74999 12.0639 5.20299 11.2349 4.09499L10.0339 4.99399C10.4369 5.53299 10.3769 6.23999 9.94893 6.66699L11.0059 7.72899ZM20.5259 14.288C21.3429 14.732 21.4699 15.778 20.8929 16.352L21.9509 17.415C23.2909 16.082 22.8779 13.859 21.2409 12.97L20.5259 14.288ZM17.0849 13.439C17.4689 13.057 18.0869 12.963 18.6149 13.249L19.3309 11.932C18.2469 11.342 16.9029 11.505 16.0269 12.375L17.0849 13.439Z" fill="#313131"/>
+                    </svg>
+                    <a href="">+9940123456789</a>
+                </address>
+            </section>
+            <section class="header_Language">
+                <div class="change_Language">
+                    <button class="dropdown-item" id="az">Az</button>
+                    <span>|</span>
+                    <button class="dropdown-item" id="en">En</button>
+                    <span>|</span>
+                    <button class="dropdown-item" id="ru">Ру</button>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <header class="header" id="header">
+        <nav class="navbar container pt-3">
+            <section class="navbar__left">
+                <a href="./index.html" class="brand">
+                    <img width="120" src="../assests/Logo/Group18.png" alt="BIMEX Logo">
+                </a>
+                <div class="burger" id="burger">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 5H20M4 12H20M4 19H14" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </section>
+            <section class="navbar__center">
+                <span class="overlay"></span>
+                <div class="menu" id="menu">
+                <div class="menu__header">
+                    <span class="menu__arrow">
+                        <i class="bx bx-chevron-left"></i>
+                        <span data-key="go_Back" data-html>Go Back</span>
+                    </span>
+                    <span class="menu__title"></span>
+                </div>
+                <ul class="menu__inner">
+                    <li class="menu__item">
+                        <span class="nav__Item__Icon"></span>
+                        <a href="/index.html" class="menu__link" data-key="nav_Home" data-html>Home</a>
+                    </li>
+                    <li class="menu__item menu__dropdown">
+                        <span class="menu__link">
+                            <a href="./pages/products.html" class="menu__link" data-key="nav_Services" data-html></a>
+                            <i class="navbar_dropDown_Right_Arrow bx bx-chevron-right"></i>
+                        </span>
+                        <div class="submenu megamenu__text">
+                            <!-- <a href="https://www.ag.bimextech.com" target="_blank" class="nav_Agros_Inner submenu__inner">
+                                <img src="/assets/img/navAgricultureDrone.jpg" alt="Agriculture Drone">
+                                <p>Agriculture Drones</p>
+                            </a> -->
+                            <div class="submenu__inner">
+                                <!-- <div class="submenu__image">
+                                    <img src="./assets/img/drone2.png" alt="">
+                                </div> -->
+                                <div>
+                                    <h4 class="submenu__title">
+                                        <a href="./pages/products.html">Service Type</a>
+                                    </h4>
+                                    <ul class="submenu__list mega_submenu__list">
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="submenu__inner">
+                                <div>
+                                    <h4 class="submenu__title">
+                                        <a href="./pages/products.html">Service Type</a>
+                                    </h4>
+                                    <ul class="submenu__list mega_submenu__list">
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="submenu__inner">
+                                <div>
+                                    <h4 class="submenu__title">
+                                        <a href="./pages/products.html">Service Type</a>
+                                    </h4>
+                                    <ul class="submenu__list mega_submenu__list">
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="submenu__inner">
+                                <div>
+                                    <h4 class="submenu__title">
+                                        <a href="./pages/products.html">Service Type</a>
+                                    </h4>
+                                    <ul class="submenu__list mega_submenu__list">
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="submenu__inner">
+                                <div>
+                                    <h4 class="submenu__title">
+                                        <a href="./pages/products.html">Service Type</a>
+                                    </h4>
+                                    <ul class="submenu__list mega_submenu__list">
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                        <li><a href="./pages/productDetails.html">Service</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#aboutSection" class="menu__link" data-key="nav_About" data-html>About Us</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="pages/contact.html" class="menu__link" data-key="nav_Contact" data-html>Contact</a>
+                    </li>
+                    
+
+                </li>
+
+                <section id="mobile_Sidebar_SocialMedia" class="container">
+
+                    <small data-key="follow_Me_With_Social" data-html></small>
+                    <div class="mobile_Sidebar_SocialMedia_Icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </section>
+                <div class="container hr_Mobile_Sidebar">
+                    <hr style="background-color: #dddddd; border: 1px solid #dddddd;"/>
+                </div>
+                    <section id="mobile_Sidebar_ContactUs" class="container">
+                        <small class="sidebar_Contact_Us_Title" data-key="contact_Title" data-html></small>
+                        <hr class="hr"/>
+                        <div class="mobile_Sidebar_ContactUs_Infos">
+                            <div class="">
+                                <div class="mobile_Sidebar_ContactUs_Info_Numbers d-flex jus justify-content-between gap-2">
+                                    <a target="_blank" style="background-color: #25D366;" href="https://api.whatsapp.com/send?phone=+994552181218&text=Salam">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.05 4.91005C18.1331 3.98416 17.0411 3.25002 15.8376 2.75042C14.634 2.25081 13.3431 1.99574 12.04 2.00005C6.58005 2.00005 2.13005 6.45005 2.13005 11.9101C2.13005 13.6601 2.59005 15.3601 3.45005 16.8601L2.05005 22.0001L7.30005 20.6201C8.75005 21.4101 10.38 21.8301 12.04 21.8301C17.5 21.8301 21.9501 17.3801 21.9501 11.9201C21.9501 9.27005 20.92 6.78005 19.05 4.91005ZM12.04 20.1501C10.56 20.1501 9.11005 19.7501 7.84005 19.0001L7.54005 18.8201L4.42005 19.6401L5.25005 16.6001L5.05005 16.2901C4.2276 14.9771 3.79097 13.4593 3.79005 11.9101C3.79005 7.37005 7.49005 3.67005 12.03 3.67005C14.23 3.67005 16.3 4.53005 17.85 6.09005C18.6177 6.85392 19.226 7.7626 19.6397 8.76338C20.0534 9.76417 20.2642 10.8371 20.26 11.9201C20.28 16.4601 16.58 20.1501 12.04 20.1501ZM16.56 13.9901C16.31 13.8701 15.09 13.2701 14.87 13.1801C14.64 13.1001 14.48 13.0601 14.31 13.3001C14.14 13.5501 13.67 14.1101 13.53 14.2701C13.39 14.4401 13.24 14.4601 12.99 14.3301C12.74 14.2101 11.94 13.9401 11 13.1001C10.26 12.4401 9.77005 11.6301 9.62005 11.3801C9.48005 11.1301 9.60005 11.0001 9.73005 10.8701C9.84005 10.7601 9.98005 10.5801 10.1 10.4401C10.22 10.3001 10.27 10.1901 10.35 10.0301C10.43 9.86005 10.39 9.72005 10.33 9.60005C10.27 9.48005 9.77005 8.26005 9.57005 7.76005C9.37005 7.28005 9.16005 7.34005 9.01005 7.33005H8.53005C8.36005 7.33005 8.10005 7.39005 7.87005 7.64005C7.65005 7.89005 7.01005 8.49005 7.01005 9.71005C7.01005 10.9301 7.90005 12.1101 8.02005 12.2701C8.14005 12.4401 9.77005 14.9401 12.25 16.0101C12.84 16.2701 13.3 16.4201 13.66 16.5301C14.25 16.7201 14.79 16.6901 15.22 16.6301C15.7 16.5601 16.69 16.0301 16.89 15.4501C17.1 14.8701 17.1 14.3801 17.03 14.2701C16.96 14.1601 16.81 14.1101 16.56 13.9901Z" fill="#fff"/>
+                                        </svg>
+                                        <small style="font-size: .9rem;">WhatsApp</small>
+                                    </a>
+                                    <a style="background: #3b82f6;" href="tel:+994552181218">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.6291 13.8914L17.0851 13.4384L16.0261 12.3744L15.5721 12.8274L16.6291 13.8914ZM18.6141 13.2484L20.5251 14.2874L21.2401 12.9694L19.3301 11.9314L18.6141 13.2484ZM20.8921 16.3514L19.4721 17.7644L20.5291 18.8274L21.9491 17.4154L20.8921 16.3514ZM18.6061 18.2184C17.1561 18.3544 13.4061 18.2334 9.34405 14.1954L8.28605 15.2584C12.7181 19.6654 16.9371 19.8814 18.7461 19.7124L18.6061 18.2184ZM9.34405 14.1954C5.47305 10.3454 4.83105 7.10845 4.75105 5.70345L3.25305 5.78845C3.35305 7.55645 4.14805 11.1444 8.28605 15.2584L9.34405 14.1954ZM10.7191 8.01545L11.0061 7.72945L9.95005 6.66645L9.66305 6.95145L10.7191 8.01545ZM11.2341 4.09445L9.97405 2.41045L8.77305 3.31045L10.0331 4.99345L11.2341 4.09445ZM5.73305 2.04345L4.16305 3.60345L5.22105 4.66745L6.79005 3.10745L5.73305 2.04345ZM10.1911 7.48345C9.66105 6.95145 9.66105 6.95145 9.66105 6.95345H9.65905L9.65605 6.95745C9.60853 7.00536 9.56598 7.05796 9.52905 7.11445C9.47505 7.19445 9.41605 7.29945 9.36605 7.43245C9.24433 7.77577 9.214 8.14486 9.27805 8.50345C9.41205 9.36845 10.0081 10.5114 11.5341 12.0294L12.5921 10.9654C11.1631 9.54545 10.8231 8.68145 10.7601 8.27345C10.7301 8.07945 10.7611 7.98345 10.7701 7.96145C10.7761 7.94811 10.7761 7.94611 10.7701 7.95545C10.7611 7.96925 10.7511 7.98229 10.7401 7.99445L10.7301 8.00445L10.7201 8.01345L10.1911 7.48345ZM11.5341 12.0294C13.0611 13.5474 14.2101 14.1394 15.0761 14.2714C15.5191 14.3394 15.8761 14.2854 16.1471 14.1844C16.2989 14.1289 16.4407 14.0492 16.5671 13.9484L16.6171 13.9034L16.6241 13.8974L16.6271 13.8944L16.6281 13.8924C16.6281 13.8924 16.6291 13.8914 16.1001 13.3594C15.5701 12.8274 15.5731 12.8264 15.5731 12.8264L15.5751 12.8244L15.5771 12.8224L15.5831 12.8174L15.5931 12.8074L15.6311 12.7774C15.6404 12.7714 15.6381 12.7721 15.6241 12.7794C15.5991 12.7884 15.5011 12.8194 15.3041 12.7894C14.8901 12.7254 14.0201 12.3854 12.5921 10.9654L11.5341 12.0294ZM9.97405 2.40945C8.95405 1.04945 6.95005 0.833448 5.73305 2.04345L6.79005 3.10745C7.32205 2.57845 8.26605 2.63345 8.77305 3.31045L9.97405 2.40945ZM4.75205 5.70445C4.73205 5.35845 4.89105 4.99645 5.22105 4.66845L4.16205 3.60445C3.62505 4.13845 3.20205 4.89445 3.25305 5.78845L4.75205 5.70445ZM19.4721 17.7644C19.1981 18.0384 18.9021 18.1924 18.6071 18.2194L18.7461 19.7124C19.4811 19.6434 20.0821 19.2734 20.5301 18.8284L19.4721 17.7644ZM11.0061 7.72945C11.9911 6.75045 12.0641 5.20345 11.2351 4.09545L10.0341 4.99445C10.4371 5.53345 10.3771 6.24045 9.94905 6.66745L11.0061 7.72945ZM20.5261 14.2884C21.3431 14.7324 21.4701 15.7784 20.8931 16.3524L21.9511 17.4154C23.2911 16.0824 22.8781 13.8594 21.2411 12.9704L20.5261 14.2884ZM17.0851 13.4394C17.4691 13.0574 18.0871 12.9634 18.6151 13.2494L19.3311 11.9324C18.2471 11.3424 16.9031 11.5054 16.0271 12.3754L17.0851 13.4394Z" fill="#fff"/>
+                                        </svg>
+                                        <small style="font-size: .9rem;" data-key="call" data-html>Call</small>
+                                    </a>
+                                </div>
+                                <div class="mobile_Sidebar_ContactUs_Info_Address d-flex jus justify-content-between gap-2">
+
+                                    <a href="mailto:'office@bimextech.com" class="">
+                                        <i class="fas fa-envelope"></i>
+                                        <div>
+                                            <h4 data-key="email" data-html>Email</h4>
+                                            <p>office@bimextech.com</p>
+                                        </div>
+                                    </a>
+
+                                    <a target="_blank" href="https://maps.app.goo.gl/aGqMk9fSiKwqnQZa6" class="">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <h4 data-key="office" data-html>Office</h4>
+                                            <p data-key="address" data-html>Baku, Azerbaija, Ahmad Rajabli</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </ul>
+            </div>
+            </section>
+            <section class="navbar__right">
+                <a href="" class="navbar_Free_Consulting">
+                    <span
+                        class="search_Icon search_Modal"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        <svg t="1760242447714" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5271" width="18" height="18">
+                            <path d="M927.616 465.6C923.328 236.704 745.888 51.808 528 51.808h-32c-217.888 0-395.328 184.896-399.616 413.76C58.112 487.744 32 528.672 32 576v64c0 70.592 57.408 128 128 128s128-57.408 128-128v-64a128.064 128.064 0 0 0-126.784-127.872C173.728 262.688 318.912 115.808 496 115.808h32c177.12 0 322.272 146.88 334.784 332.32A128.064 128.064 0 0 0 736 576v64c0 57.792 38.72 106.176 91.392 122.016a337.504 337.504 0 0 1-191.936 124.48A79.712 79.712 0 0 0 560 832a80 80 0 1 0 0 160 79.68 79.68 0 0 0 67.872-38.112 402.432 402.432 0 0 0 278.24-193.6C955.968 742.816 992 695.776 992 640v-64c0-47.328-26.112-88.256-64.384-110.4zM224 576v64c0 35.296-28.704 64-64 64s-64-28.704-64-64v-64c0-35.296 28.704-64 64-64s64 28.704 64 64z m704 64c0 34.304-27.2 62.176-61.12 63.712l-2.496-1.184c-0.224 0.512-0.576 0.928-0.8 1.408A64 64 0 0 1 800 640v-64c0-35.296 28.704-64 64-64s64 28.704 64 64v64z" p-id="5272" fill="#000"></path>
+                        </svg>
+                    </span>
+
+                    <small>Free Consulting</small>
+                </a>
+
+            </section>
+        </nav>
+    </header>
+
+    <!-- Header End -->
+
+    <main>
+
+        <div class="container contact_Page_Section">
+            <div class="page_Title">
+                <h2>Contact our team</h2>
+                <p class="subtitle">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic ab eaque quos.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                </p>
+            </div>
+
+            <div class="grid">
+                <!-- Left – Form -->
+                <div class="form-side">
+                <div>
+                    <label>First name</label>
+                    <input type="text" placeholder="First name">
+                </div>
+
+                <div>
+                    <label>Last name</label>
+                    <input type="text" placeholder="Last name">
+                </div>
+
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="you@company.com">
+                </div>
+
+                <div>
+                    <label>Message</label>
+                    <textarea placeholder="Leave us a message..."></textarea>
+                </div>
+
+                <button class="btn">Send message</button></div>
+
+                <div class="contact-options">
+                    <div>
+                        <div class="options-title">Chat with us</div>
+                        <div class="option">Speak to our friendly team via chat.</div>
+                        <div class="option"><a href="#">⇢ Start WhatsApp chat</a></div>
+                        <div class="option"><a href="#">✉ Shoot us an email</a></div>
+                    </div>
+
+                    <div>
+                        <div class="options-title">Call us</div>
+                        <div class="option">Call our team Mon–Fri 8am to 5pm.</div>
+                        <div class="option"><a href="tel:+994705803000">☎ +994 70 580 30 00</a></div>
+                    </div>
+
+                    <div>
+                        <div class="options-title">Visit us</div>
+                        <div class="option">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+                        <div class="address">Lorem ipsum dolor sit.</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <label>Last name</label>
-            <input type="text" placeholder="Last name">
-        </div>
+    </main>
 
-        <div>
-            <label>Email</label>
-            <input type="email" placeholder="you@company.com">
-        </div>
 
-        <div>
-            <label>Message</label>
-            <textarea placeholder="Leave us a message..."></textarea>
-        </div>
 
-        <button class="btn">Send message</button>
-        </div>
+    <!-- Slicky slider Testimonials -->
 
-        <!-- Right – Contact options -->
-        <div class="contact-options">
-        <div>
-            <div class="options-title">Chat with us</div>
-            <div class="option">Speak to our friendly team via chat.</div>
-            <div class="option"><a href="#">⇢ Start live chat</a></div>
-            <div class="option"><a href="#">✉ Shoot us an email</a></div>
-            <div class="option"><a href="#">𝕏 Message us on X</a></div>
-        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
 
-        <div>
-            <div class="options-title">Call us</div>
-            <div class="option">Call our team Mon–Fri 8am to 5pm.</div>
-            <div class="option"><a href="tel:+15550000000">☎ +1 (555) 000-0000</a></div>
-        </div>
+        <script src="../js/main.js"></script>
+        <script src="../js/i18.js"></script>
 
-        <div>
-            <div class="options-title">Visit us</div>
-            <div class="option">Chat to us in person at our Melbourne HQ.</div>
-            <div class="address">100 Smith Street, Collingwood VIC 3066</div>
-        </div>
-        </div>
-    </div>
-    </div>
 
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+        <!-- Slick slider -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+
+        <!-- aos animation -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
 
 </body>
 </html>
