@@ -103,6 +103,24 @@ p {
     margin-top: 24px;
     z-index: 100;
 
+    address {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+
+        a {
+            display: none;
+        }
+
+        svg {
+            width: 20px !important;
+            height: 20px !important;
+            border: 1px solid gray;
+            border-radius: 50%;
+            padding: 5px;
+        }
+    }
+
     .header_Container {
         display: flex;
         justify-content: space-between;
@@ -691,6 +709,7 @@ a.cta-button {
 
     #header {
         width: 100%;
+        padding: 0 10px;
     }
 
     .header_Language_Desktop {
@@ -1979,6 +1998,7 @@ a.cta-button {
     /* Header */
 
     #header_Top {
+
 
         .header_Address {
 
