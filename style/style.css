@@ -103,6 +103,10 @@ p {
     margin-top: 24px;
     z-index: 100;
 
+    .header_Container {
+        padding: 2px 0 !important;
+    }
+
     .header_Address {
         gap: 0 10px !important;
     }
