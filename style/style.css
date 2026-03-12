@@ -104,7 +104,10 @@ p {
     z-index: 100;
 
     .header_Container {
-        padding: 2px 0 !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2px 0;
     }
 
     .header_Address {
@@ -129,13 +132,6 @@ p {
             border-radius: 50%;
             padding: 6px;
         }
-    }
-
-    .header_Container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px 0;
     }
 
     .header_Address {
@@ -762,161 +758,166 @@ a.cta-button {
         .language_menu {
             background-color: var(--color);
         }
-}
 
-  #mobile_Sidebar_SocialMedia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin-top: 10px;
-
-    .mobile_Sidebar_SocialMedia_Icons {
-      display: flex !important;
-      gap: 0 10px;
     }
 
-    a {
-        color: #000;
-        font-size: 1.1rem;
-        margin-right: 0;
-        display: inline-block;
-        transition: 0.3s;
-        background: var(--colorBackgroundGradient);
-        color: #ffffff;
-        box-shadow: 0 4px 6px rgba(63, 86, 200, 0.1);
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.hr_Mobile_Sidebar {
-    display: block;
-}
-
-#mobile_Sidebar_ContactUs {
-    display: block;
-    padding: 10px;
-    color: #e5e7eb;
-    text-align: center;
-
-    .hr {
-        border: 0;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    .navbar_Free_Consulting small {
+        display: none !important;
     }
 
-    small {
-        font-size: .875rem;
-        color: #000;
-    }
-
-    .mobile_Sidebar_ContactUs_Info_Numbers {
-        display: flex;
-
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: var(--borderRadius_8px);
-            width: 100%;
-            padding: 10px;
-
-            small {
-            font-size: .8rem;
-            margin-left: 10px;
-            color: #fff;
-            }
-        }
-    }
-
-    .mobile_Sidebar_ContactUs_Info_Address {
+    #mobile_Sidebar_SocialMedia {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 20px;
         margin-top: 10px;
 
+        .mobile_Sidebar_SocialMedia_Icons {
+            display: flex !important;
+            gap: 0 10px;
+        }
+
         a {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            border-radius: var(--borderRadius_8px);
-            width: 100%;
+            color: #000;
+            font-size: 1.1rem;
+            margin-right: 0;
+            display: inline-block;
+            transition: 0.3s;
+            background: var(--colorBackgroundGradient);
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(63, 86, 200, 0.1);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
             padding: 10px;
-
-            i {
-                color: #5d5d5d;
-                font-size: 20px;
-                margin-bottom: 5px;
-            }
-
-            h4 {
-                margin-bottom: 10px !important;
-                font-size: 1rem;
-                color: #000;
-            }
-
-            small {
-                font-size: .1rem !important;
-            }
-
-            p {
-                font-size: .8rem;
-                color: #000 !important;
-
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
-}
-
-
-    .dropdown-itemEn::before {
-        border: 0px solid var(--color);
-        height: 15px;
+    .hr_Mobile_Sidebar {
+        display: block;
     }
 
-    .dropdown-itemRu::before {
-        border: 0px solid var(--color);
-        height: 15px;
+    #mobile_Sidebar_ContactUs {
+        display: block;
+        padding: 10px;
+        color: #e5e7eb;
+        text-align: center;
+
+        .hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+
+        small {
+            font-size: .875rem;
+            color: #000;
+        }
+
+        .mobile_Sidebar_ContactUs_Info_Numbers {
+            display: flex;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: var(--borderRadius_8px);
+                width: 100%;
+                padding: 10px;
+
+                small {
+                font-size: .8rem;
+                margin-left: 10px;
+                color: #fff;
+                }
+            }
+        }
+
+        .mobile_Sidebar_ContactUs_Info_Address {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+
+            a {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                border-radius: var(--borderRadius_8px);
+                width: 100%;
+                padding: 10px;
+
+                i {
+                    color: #5d5d5d;
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+
+                h4 {
+                    margin-bottom: 10px !important;
+                    font-size: 1rem;
+                    color: #000;
+                }
+
+                small {
+                    font-size: .1rem !important;
+                }
+
+                p {
+                    font-size: .8rem;
+                    color: #000 !important;
+
+                }
+            }
+        }
+
     }
 
-.go_To_Shopping {
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0 5px;
-    padding: 0 0 10px 0 !important;
 
-    .button-group {
-        width: 50%;
-    }
+        .dropdown-itemEn::before {
+            border: 0px solid var(--color);
+            height: 15px;
+        }
 
-    a {
-        background-color: var(--color);
-        color: #fff;
-        font-size: 16px;
-        gap: 0 5px;
-        display: flex;
-        justify-content: center;
+        .dropdown-itemRu::before {
+            border: 0px solid var(--color);
+            height: 15px;
+        }
+
+    .go_To_Shopping {
+        display: flex !important;
+        justify-content: space-between;
         align-items: center;
-        height: 45px;
-        border-radius: 30px;
-        transition: 0.2s;
-        padding: 14px 0 !important;
-    }
+        gap: 0 5px;
+        padding: 0 0 10px 0 !important;
 
-    img {
-        width: 30px !important;
-        height: 30px !important;
+        .button-group {
+            width: 50%;
+        }
+
+        a {
+            background-color: var(--color);
+            color: #fff;
+            font-size: 16px;
+            gap: 0 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            border-radius: 30px;
+            transition: 0.2s;
+            padding: 14px 0 !important;
+        }
+
+        img {
+            width: 30px !important;
+            height: 30px !important;
+        }
     }
-}
 
 }
 
@@ -1470,39 +1471,6 @@ a.cta-button {
     }
   }
 
-  .nav_Agros_Inner {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 !important;
-
-    img {
-      position: relative;
-      width: 100% !important;
-      height: 100%;
-      object-fit: cover;
-      padding: 0 !important;
-    }
-
-    p {
-      position: absolute;
-      bottom: 30px !important;
-      left: 50%;
-      transform: translate(-50%, 0px) !important;
-      color: #fff;
-      font-size: 1.1rem;
-      max-width: 100%;
-      width: 80%;
-      text-align: center;
-      font-weight: 700;
-      text-shadow: 0 0 10px #000000;
-      z-index: 999;
-    }
-  }
-
-
-
 .submenu.megamenu__image .submenu__inner a {
   display: flex;
   flex-flow: column;
@@ -2008,7 +1976,7 @@ a.cta-button {
     /* Header */
 
     #header_Top {
-
+        margin-top: 10px !important;
 
         .header_Address {
 
