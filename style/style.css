@@ -103,21 +103,27 @@ p {
     margin-top: 24px;
     z-index: 100;
 
+    .header_Address {
+        gap: 0 10px !important;
+    }
+
     address {
         display: flex;
         align-items: center;
         column-gap: 7px;
+        width: 40px;
+        height: 40px;
 
         a {
             display: none;
         }
 
         svg {
-            width: 20px !important;
-            height: 20px !important;
+            width: 30px !important;
+            height: 30px !important;
             border: 1px solid gray;
             border-radius: 50%;
-            padding: 5px;
+            padding: 6px;
         }
     }
 
