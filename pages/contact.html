@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Our Team</title>
+    <link rel="stylesheet" href="/style/style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f8f9fc;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px 40px;
+    }
+
+    .form-side, .contact-options {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 1rem;
+      background: white;
+      transition: border-color 0.2s;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #6366f1;
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+
+    .btn {
+      background: #1e293b;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 1.05rem;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 12px;
+    }
+
+    .btn:hover {
+      background: #0f172a;
+    }
+
+    .options-title {
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.05rem;
+    }
+
+    .option a {
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .option a:hover {
+      text-decoration: underline;
+    }
+
+    .address {
+      margin-top: 8px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 16px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+    <h1>Contact our team</h1>
+    <p class="subtitle">
+        Got any questions about the product or scaling on our platform? We're here to help.<br>
+        Chat to our friendly team 24/7 and get onboard in less than 5 minutes.
+    </p>
+
+    <div class="grid">
+        <!-- Left – Form -->
+        <div class="form-side">
+        <div>
+            <label>First name</label>
+            <input type="text" placeholder="First name">
+        </div>
+
+        <div>
+            <label>Last name</label>
+            <input type="text" placeholder="Last name">
+        </div>
+
+        <div>
+            <label>Email</label>
+            <input type="email" placeholder="you@company.com">
+        </div>
+
+        <div>
+            <label>Message</label>
+            <textarea placeholder="Leave us a message..."></textarea>
+        </div>
+
+        <button class="btn">Send message</button>
+        </div>
+
+        <!-- Right – Contact options -->
+        <div class="contact-options">
+        <div>
+            <div class="options-title">Chat with us</div>
+            <div class="option">Speak to our friendly team via chat.</div>
+            <div class="option"><a href="#">⇢ Start live chat</a></div>
+            <div class="option"><a href="#">✉ Shoot us an email</a></div>
+            <div class="option"><a href="#">𝕏 Message us on X</a></div>
+        </div>
+
+        <div>
+            <div class="options-title">Call us</div>
+            <div class="option">Call our team Mon–Fri 8am to 5pm.</div>
+            <div class="option"><a href="tel:+15550000000">☎ +1 (555) 000-0000</a></div>
+        </div>
+
+        <div>
+            <div class="options-title">Visit us</div>
+            <div class="option">Chat to us in person at our Melbourne HQ.</div>
+            <div class="address">100 Smith Street, Collingwood VIC 3066</div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>
