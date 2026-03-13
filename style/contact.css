@@ -4,11 +4,11 @@ body {
     color: #333;
 }
 
-.contact_Page_Section {
+/* .contact_Page_Section {
     max-width: 1100px;
     margin: 50px 0;
     padding: 40px 28px;
-}
+} */
 
 .contact_Page_Section h1 {
     font-size: 2.4rem;
@@ -32,6 +32,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.contact_Option_Infos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+}
+
+.options-title {
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .contact_Page_Section label {

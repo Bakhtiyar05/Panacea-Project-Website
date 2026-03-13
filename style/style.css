@@ -120,11 +120,16 @@ p {
         display: flex;
         align-items: center;
         column-gap: 7px;
-        width: 40px;
-        height: 40px;
+        padding: 5px 0;
+        /* width: 40px; */
+        /* height: 40px; */
+
+        /* a {
+            display: none;
+        } */
 
         a {
-            display: none;
+            font-style: normal;
         }
 
         svg {
@@ -752,6 +757,27 @@ a.cta-button {
 
 
 @media screen and (max-width: 766px) {
+
+    address {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+        padding: 5px 0;
+        width: 40px;
+        height: 40px;
+
+        a {
+            display: none !important;
+        }
+
+        svg {
+            width: 30px !important;
+            height: 30px !important;
+            border: 1px solid gray;
+            border-radius: 50%;
+            padding: 6px;
+        }
+    }
 
     .navbar .navbar__left {
         flex: 0 0 auto;
