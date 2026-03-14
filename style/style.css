@@ -111,24 +111,18 @@ p {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2px 0;
+        padding: 5px 0;
     }
 
     .header_Address {
         gap: 0 10px !important;
     }
 
-    address {
+    /* address {
         display: flex;
         align-items: center;
         column-gap: 7px;
         padding: 5px 0;
-        /* width: 40px; */
-        /* height: 40px; */
-
-        /* a {
-            display: none;
-        } */
 
         a {
             font-style: normal;
@@ -141,6 +135,21 @@ p {
             border-radius: 50%;
             padding: 6px;
         }
+    } */
+
+    address {
+        display: flex;
+        align-items: center;
+        gap: 0 7px;
+    }
+
+    .contact_Info_Circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(159, 159, 159);
+        border-radius: 50%;
+        padding: 7px;
     }
 
     .header_Address {
@@ -149,7 +158,7 @@ p {
         gap: 0 20px;
 
         a {
-            font-size: 14px !important;
+            font-size: .8rem !important;
             color: var(--mainColor);
         }
     }
@@ -2289,7 +2298,6 @@ a.cta-button {
   }
 
   .nav-link span {
-    color: #757575 !important;
     font-size: .85rem !important;
     font-weight: 500;
   }
@@ -3417,7 +3425,7 @@ a.cta-button {
 
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-items:auto;
     gap: 50px;
     margin: auto;
@@ -3455,7 +3463,7 @@ a.cta-button {
 }
 
 .footer-column ul li {
-    font-size: 14px;
+    font-size: .85rem;
     margin-bottom: 10px !important;
 }
 
@@ -3463,6 +3471,10 @@ a.cta-button {
     color: var(--mainColor);
     text-decoration: none;
     transition: 0.3s;
+}
+
+.footer-column.contact ul li a {
+    margin-left: 5px;
 }
 
 .footer-column ul li a:hover {
