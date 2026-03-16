@@ -1,131 +1,162 @@
-.services_layout{
-display:grid;
-grid-template-columns:300px 1fr;
-gap:60px;
-margin-top:60px;
+.services_Page_Section {
+    background: var(--pageBackgroundColor);
+    padding: 100px 0;
+}
+
+.services_Page_Section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+    color: var(--mainColor);
+}
+
+.services_Page_Section .subtitle {
+    color: gray;
+    margin: 40px 0 40px 0 !important;
+    font-size: 1.1rem;
+    max-width: 640px;
+}
+
+.services_layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 60px;
+    margin-top: 60px;
 }
 
 /* tabs */
 
-.services_tabs{
-display:flex;
-flex-direction:column;
-gap:15px;
-position:sticky;
-top:120px;
+.services_tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: sticky;
+    top: 120px;
 }
 
-.service_tab{
-display:flex;
-align-items:center;
-gap:12px;
-padding:16px 18px;
-background:#fff;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-weight:500;
-transition:0.3s;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
+.service_tab {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 18px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-.service_tab i{
-color:#1872B8;
-font-size:18px;
+.service_tab i {
+    color: #1872B8;
+    font-size: 18px;
 }
 
-.service_tab:hover{
-transform:translateX(5px);
+.service_tab:hover {
+    transform: translateX(5px);
 }
 
-.service_tab.active{
-background:#1872B8;
-color:white;
+.service_tab.active {
+    background: #1872B8;
+    color: white;
 }
 
-.service_tab.active i{
-color:white;
+.service_tab.active i {
+    color: white;
 }
 
 /* right content */
 
-.services_content{
-background:white;
-padding:40px;
-border-radius:12px;
-box-shadow:0 15px 40px rgba(0,0,0,0.05);
+.services_content {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
 }
 
-.service_panel{
-display:none;
-animation:fadeIn .4s ease;
+.service_panel {
+    display: none;
+    animation: fadeIn .4s ease;
 }
 
-.service_panel.active{
-display:block;
+.service_panel.active {
+    display: block;
 }
 
-.service_panel h3{
-font-size:28px;
-margin-bottom:20px;
+.service_panel h3 {
+    font-size: 28px;
+    margin-bottom: 20px !important;
 }
 
-.service_panel p{
-color:#64748b;
-margin-bottom:25px;
+.service_panel p {
+    color:#64748b;
+    margin-bottom:25px !important;
 }
 
-.service_features{
-list-style:none;
-padding:0;
-margin-bottom:30px;
+.service_features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
-.service_features li{
-margin-bottom:10px;
-color:#475569;
+.service_features li {
+    margin-bottom: 10px;
+    color: #475569;
 }
 
-.service_features li::before{
-content:"✓";
-margin-right:10px;
-color:#1872B8;
+.service_features li::before {
+    content: "✓";
+    margin-right: 10px;
+    color: #1872B8;
 }
 
-.service_btn{
-display:inline-block;
-background:#1872B8;
-color:white;
-padding:12px 24px;
-border-radius:6px;
-text-decoration:none;
+.service_btn {
+    display: inline-block;
+    background: #1872B8;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-decoration: none;
 }
 
-@keyframes fadeIn{
-from{
-opacity:0;
-transform:translateY(10px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-@media(max-width:992px){
-
-.services_layout{
-grid-template-columns:1fr;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.services_tabs{
-flex-direction:row;
-overflow-x:auto;
-position:static;
-}
+@media screen and ( max-width: 992px ) {
 
-.service_tab{
-white-space:nowrap;
-}
+    .services_layout {
+        grid-template-columns: 1fr;
+    }
+
+    .services_tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        position: static;
+        padding: 10px 0;
+        gap: 7px !important;
+    }
+
+    .service_tab {
+        white-space: nowrap;
+        padding: 7px 10px !important;
+        gap: 7px !important;
+
+        span {
+            font-weight: 200 !important;
+        }
+
+        i {
+            font-size: .7rem !important;
+        }
+    }
 
 }

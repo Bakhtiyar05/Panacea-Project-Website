@@ -138,6 +138,13 @@ p {
         }
     } */
 
+    .subtitle {
+        color: gray;
+        margin: 40px 0 40px 0 !important;
+        font-size: .1rem;
+        max-width: 640px;
+    }
+
     address {
         display: flex;
         align-items: center;
@@ -780,14 +787,6 @@ a.cta-button {
 
         a {
             display: none !important;
-        }
-
-        svg {
-            width: 30px !important;
-            height: 30px !important;
-            border: 1px solid gray;
-            border-radius: 50%;
-            padding: 6px;
         }
     }
 
