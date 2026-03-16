@@ -1,11 +1,11 @@
 body {
     font-family: system-ui, -apple-system, sans-serif;
-    background: #f8f9fc;
 }
 
 .contact_Page_Section {
+    background: var(--pageBackgroundColor);
     position: relative;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .contact_Page_Section h2 {
