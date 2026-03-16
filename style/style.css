@@ -3056,8 +3056,7 @@ a.cta-button {
 /* Testimonials */
 
 #testimonials {
-    background: #313131;
-    background: linear-gradient(0deg, rgba(49, 49, 49, 0.638) 0%, rgba(49, 49, 49, 0) 100%);
+    background: var(--pageBackgroundColor);
     padding: 100px 0;
 }
 
@@ -3128,7 +3127,7 @@ a.cta-button {
 }
 
 .reviews .reviews-text-slider h2 {
-	color: var(--whiteColor);
+	color: var(--mainColor);
 }
 
 .reviews .reviews-text-slider {
@@ -3146,7 +3145,7 @@ a.cta-button {
 
 .reviews .sin-testiText p {
 	margin: 30px auto 0 auto !important;
-	color: var(--whiteColor);
+	color: var(--mainColor);
 	line-height: 24px;
     max-width: 700px;
     text-align: center;
@@ -3415,7 +3414,7 @@ a.cta-button {
 
 .footer {
     /* background: linear-gradient(12deg, #ddddddc5, var(--mainColor)); */
-    background-color: var(--whiteColor);
+    background-color: var(--pageBackgroundColor);
     padding: 70px 20px 20px;
     font-family: "Poppins", sans-serif;
 
