@@ -1300,7 +1300,7 @@ a.cta-button {
 
     .submenu.megamenu__text {
         min-height: 80vh !important;
-        overflow-y: scroll !important;
+        /* overflow-y: scroll !important; */
     }
 
     .navbar_dropDown_Right_Arrow {
@@ -1432,8 +1432,8 @@ a.cta-button {
   z-index: 100;
   top: 110%;
   left: 50%;
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
   /* padding: 20px 15px; */
   border-top: 2px solid #fff;
   background-color: #fff;
@@ -1446,9 +1446,9 @@ a.cta-button {
 }
 
 .submenu.megamenu__text {
-    min-height: 80vh !important;
-    height: 100% !important;
-    overflow-y: scroll !important;
+    /* min-height: 80vh !important;
+    height: 100% !important; */
+    /* overflow-y: scroll !important; */
 }
 
 /* .darkmode .submenu {
@@ -1507,7 +1507,7 @@ a.cta-button {
   .submenu.megamenu__image {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
     margin: 0 auto;
   }
@@ -1515,10 +1515,10 @@ a.cta-button {
 
 @media screen and (min-width: 975px) {
 
-  .submenu.megamenu__text,
+  /* .submenu.megamenu__text,
   .submenu.megamenu__image {
     min-width: 992px;
-  }
+  } */
 
   .submenu.megamenu__image {
       display: grid;
@@ -1590,7 +1590,7 @@ a.cta-button {
 .submenu .submenu__inner {
   display: flex;
   justify-content: start;
-  width: 25%;
+  /* width: 25%; */
   padding: 0 15px;
   background: #ffffff;
   background: linear-gradient(198deg, rgba(255, 255, 255, 0) 0%, rgba(223, 223, 223, 0.616) 100%);
