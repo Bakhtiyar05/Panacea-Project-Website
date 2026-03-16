@@ -1357,7 +1357,7 @@ a.cta-button {
     justify-content: center;
     cursor: pointer;
     font-size: .85rem;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
     color: var(--mainColor);
     transition: all 0.25s ease;
 
@@ -1590,6 +1590,7 @@ a.cta-button {
   display: flex;
   justify-content: start;
   /* width: 25%; */
+  min-width: 240px;
   padding: 0 15px;
   background: #ffffff;
   background: linear-gradient(198deg, rgba(255, 255, 255, 0) 0%, rgba(223, 223, 223, 0.616) 100%);
@@ -1637,6 +1638,7 @@ a.cta-button {
   display: block;
   line-height: 1;
   margin: 0 auto;
+  margin: 5px 0 !important;
   transition: .1s ease-in;
   cursor: pointer;
 }
