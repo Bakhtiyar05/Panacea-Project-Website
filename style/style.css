@@ -2677,7 +2677,6 @@ a.cta-button {
 
 .service_Card {
     position: relative;
-    width: 310px;
     min-height: 310px;
     padding: 10px 0;
     text-align: center;
@@ -2751,13 +2750,12 @@ a.cta-button {
 }
 
 .service_Card:hover svg {
-    filter: brightness(0) invert(0);
+    filter: brightness(0) invert(1);
     transition: .5s;
 }
 
-.service_Card:hover svg {
-    filter: brightness(0) invert(1);
-    transition: .5s;
+.service_Card:hover .services_Card_Text_Btn svg {
+    filter: brightness(0) !important;
 }
 
 .star_Anime_Icon {
@@ -3665,7 +3663,6 @@ a.cta-button {
     .info_Counter_Cards {
 
         .info_Counter_Card {
-            width: 270px;
 
             svg {
                 font-size: 1px !important;
@@ -3755,7 +3752,6 @@ a.cta-button {
         gap: 30px 10px;
 
         .info_Counter_Card {
-            width: 470px;
 
             svg {
                 margin-bottom: 10px;
@@ -3790,6 +3786,7 @@ a.cta-button {
 
     .services_Cards {
         justify-items: center;
+        gap: 20px !important;
     }
 
     /* Banner */
