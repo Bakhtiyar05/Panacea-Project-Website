@@ -19,7 +19,7 @@
 .services_layout {
     display: grid;
     grid-template-columns: 300px 1fr;
-    gap: 60px;
+    gap: 40px;
     margin-top: 60px;
 }
 
@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 16px 18px;
+    padding: 14px 16px;
     background: #fff;
     border: none;
     border-radius: 8px;
@@ -45,6 +45,10 @@
     font-weight: 500;
     transition: 0.3s;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+
+    span {
+        font-size: .85rem;
+    }
 }
 
 .service_tab i {
@@ -57,7 +61,7 @@
 }
 
 .service_tab.active {
-    background: #1872B8;
+    background: var(--mainColor);
     color: white;
 }
 
@@ -69,7 +73,7 @@
 
 .services_content {
     background: white;
-    padding: 40px;
+    padding: 25px;
     border-radius: 12px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.05);
 }
