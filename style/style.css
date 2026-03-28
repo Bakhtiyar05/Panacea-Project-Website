@@ -785,7 +785,7 @@ a.cta-button {
         width: 40px;
         height: 40px;
 
-        a {
+        .desktop_Link_URL {
             display: none !important;
         }
     }
