@@ -161,6 +161,9 @@ body {
 
     .services_tabs {
         flex-direction: row;
+        position: fixed;
+        bottom: 0 !important;
+        top: auto;
         padding: 10px 0;
         gap: 7px !important;
     }
