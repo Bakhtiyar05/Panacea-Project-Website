@@ -270,8 +270,8 @@ p {
 }
 
 .section_Title h2 {
-    width: 280px !important;
-    font-size: 38px;
+    width: 310px !important;
+    font-size: clamp(2.5rem, 1.5vw, 1rem) !important;
     font-weight: 700;
 }
 
@@ -284,6 +284,10 @@ p {
     margin-top: 20px;
     display: block;
     clear: both;
+}
+
+.section_Title p {
+    margin: 30px 0 !important;
 }
 
 *,
@@ -1363,11 +1367,11 @@ a.cta-button {
     cursor: pointer;
     font-size: .85rem;
     font-weight: 500 !important;
-    color: var(--mainColor);
+    color: #313131db;
     transition: all 0.25s ease;
 
     a {
-        color: var(--mainColor);
+        color: #313131db;
         transition: .2s;
     }
 
@@ -2512,7 +2516,7 @@ a.cta-button {
         justify-content: center;
         transform: rotate(90deg);
         color: var(--mainColor);
-        box-shadow: 0 0px 5px 1px #fff;
+        box-shadow: 0 0px 9px #fff;
     }
 }
 
@@ -2654,27 +2658,6 @@ a.cta-button {
 
 #services {
     margin: 80px 0;
-}
-
-.section_Title {
-    margin-bottom: 50px;
-}
-
-.section_Title h2 {
-    width: 280px !important;
-    font-size: 38px;
-    font-weight: 700;
-}
-
-.section_Title h2::after {
-    content: "";
-    background-color: var(--mainColor);
-    width: 80px;
-    height: 4px;
-    border-radius: 2px;
-    margin-top: 20px;
-    display: block;
-    clear: both;
 }
 
 .services_Cards {
@@ -2843,7 +2826,7 @@ a.cta-button {
     width: 80px;
     height: 4px;
     border-radius: 2px;
-    margin: 20px 0 0 0;
+    margin: 20px auto 0 auto;
     display: block;
     clear: both;
 }
@@ -3278,12 +3261,28 @@ a.cta-button {
         gap: 40px 0;
         align-items: flex-start;
 
+        a {
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+        }
+
+        .contact_Section_Icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            box-shadow: 0 0 4px var(--mainColor);
+            padding: 7px;
+        }
+
         small {
             color: var(--mainColor);
         }
 
-        span {
-            
+        /* span {
 
             img {
                 width: 30px;
@@ -3295,7 +3294,7 @@ a.cta-button {
                 justify-content: center;
                 color: var(--whiteColor);
             }
-        }
+        } */
     }
 }
 
@@ -3431,7 +3430,7 @@ a.cta-button {
     left: 0;
     width: 40px;
     height: 1px;
-    color: var(--mainColor);
+    background-color: var(--mainColor);
     border-radius: 2px;
 }
 
@@ -3545,6 +3544,15 @@ a.cta-button {
     padding-top: 15px;
     font-size: 0.9rem;
     color: var(--mainColor);
+}
+
+@media screen and ( max-width: 567px ) {
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0;
+    }
 }
 
 /* Footer End */
