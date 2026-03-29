@@ -1088,6 +1088,12 @@ a.cta-button {
 
 @media screen and (max-width: 766px) {
 
+    .navbar_Free_Consulting {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+    }
+
     .navbar .navbar__right {
         flex: 0 0 auto;
         align-items: center;
