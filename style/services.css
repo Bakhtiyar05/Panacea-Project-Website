@@ -153,33 +153,44 @@ body {
     }
 }
 
-@media screen and ( max-width: 992px ) {
+@media screen and (max-width: 992px) {
 
     .services_layout {
         grid-template-columns: 1fr;
     }
 
     .services_tabs {
-        flex-direction: row;
         position: fixed;
-        bottom: 0 !important;
-        top: auto;
-        padding: 10px 0;
-        gap: 7px !important;
+        bottom: 0;
+        top: auto;            /* 🔥 ƏSAS FIX */
+        left: 0;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+
+        padding: 10px;
+        background: #fff;
+        z-index: 1000;
+
+        overflow-x: auto;
+        white-space: nowrap;
     }
 
     .service_tab {
+        flex: 0 0 auto;
         white-space: nowrap;
-        padding: 7px 10px !important;
-        gap: 7px !important;
+        padding: 7px 10px;
+        gap: 7px;
+    }
 
-        span {
-            font-weight: 200 !important;
-        }
+    .service_tab span {
+        font-weight: 400 !important;
+    }
 
-        i {
-            font-size: .7rem !important;
-        }
+    .service_tab i {
+        font-size: 0.7rem !important;
     }
 }
 
