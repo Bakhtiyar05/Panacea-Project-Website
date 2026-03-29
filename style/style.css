@@ -1045,8 +1045,7 @@ a.cta-button {
     border-radius: 30px;
     width: max-content;
     color: var(--mainColor);
-    border: 1px solid gray;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 4px var(--mainColor);
     transition: .2s;
 
     svg {

@@ -162,7 +162,7 @@ body {
     .services_tabs {
         position: fixed;
         bottom: 0;
-        top: auto;            /* 🔥 ƏSAS FIX */
+        top: auto;
         left: 0;
         width: 100%;
 
