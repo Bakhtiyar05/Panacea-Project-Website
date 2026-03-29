@@ -45,8 +45,8 @@ body {
     flex-direction: column;
     gap: 15px;
     position: sticky;
-    top: 20px;    align-self: start; /* ÇOX vacibdir (grid içində) */
-
+    top: 20px;
+    align-self: start;
 }
 
 .service_tab {
@@ -55,6 +55,7 @@ body {
     gap: 12px;
     padding: 14px 16px;
     background: #fff;
+    color: var(--mainColor);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -122,6 +123,7 @@ body {
 .service_features li {
     margin-bottom: 10px !important;
     color: #475569;
+    font-size: .85rem;
 }
 
 .service_features li::before {
@@ -159,10 +161,8 @@ body {
 
     .services_tabs {
         flex-direction: row;
-        /* overflow-x: auto; */
         padding: 10px 0;
         gap: 7px !important;
-
     }
 
     .service_tab {
@@ -178,5 +178,13 @@ body {
             font-size: .7rem !important;
         }
     }
-
 }
+
+
+
+
+
+
+
+
+

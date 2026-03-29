@@ -334,9 +334,9 @@ html {
   height: -webkit-fill-available;
 }
 
-main {
+/* main {
   overflow: hidden;
-}
+} */
 
 .visually-hidden{
   position:absolute;
