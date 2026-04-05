@@ -2785,6 +2785,7 @@ a.cta-button {
         left: 220px;
         transform: rotate(-360deg) scale(1);
     }
+    
     100% {
         top: -30px;
         left: -30px;
